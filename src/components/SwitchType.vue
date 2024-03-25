@@ -2,13 +2,13 @@
   <div class="type">
     <div class="test">
       <button class="butao" :class="{ active: activeElement === 'IconHero' }" @click="toggleActive('IconHero')">
-        <img src="../../Iconhero.png" alt="Pepe Hero Icon" class="typeSwitch">
+        <img src="https://i.imgur.com/j83LEI3.png" alt="Pepe Hero Icon" class="typeSwitch">
       </button>
       <button class="butao" :class="{ active: activeElement === 'iconHouse' }" @click="toggleActive('iconHouse')">
-        <img src="../../iconhouse.png" alt="House Icon" class="typeSwitch casa">
+        <img src="https://i.imgur.com/sSU7vOJ.png" alt="House Icon" class="typeSwitch casa">
       </button>
       <button class="butao" :class="{ active: activeElement === 'iconCheck' }" @click="toggleActive('iconCheck')">
-        <img src="../../check.png" alt="House Icon" class="typeSwitch">
+        <img src="https://imagepng.org/wp-content/uploads/2019/12/check-icone-scaled.png" alt="House Icon" class="typeSwitch">
       </button>
     </div>
   </div>
