@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Analytics />
+    <inject />
     <h2 class="title">Developed by <a href="https://github.com/tomazmpp">Tomaz</a></h2>
     <HeaderInicial @trocarComponente="trocarComponente" />
     <SwitchType @trocarComponente="trocarComponente" v-if="componenteAtual !== 'Donate'" />
@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import { Analytics } from "@vercel/analytics/vue"
+import { inject } from "@vercel/analytics"
 import HeaderInicial from './components/HeaderInicial.vue'
 import Bonecos from './components/Bonecos.vue'
 import Donate from './components/Donate.vue'
@@ -25,7 +25,7 @@ export default {
     SwitchType,
     Casas,
     Check,
-    Analytics
+    inject
   },
   data() {
     return {
