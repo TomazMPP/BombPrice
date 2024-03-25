@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/vue"
 import HeaderInicial from './components/HeaderInicial.vue'
 import Bonecos from './components/Bonecos.vue'
 import Donate from './components/Donate.vue'
