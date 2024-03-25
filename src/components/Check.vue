@@ -7,7 +7,7 @@ This page showcases the heroes available for purchase from the site owner,<br>al
        <img src="https://bcrypt.com.br/_next/image?url=%2FHeroSIcon.png&w=16&q=75" alt="Heroi classe S" class="ClasseS">
        <p><strong>ID:</strong> 1366082</p>
        <p><strong>Rarity:</strong> Perfect Super Legend</p>
-       <p><strong>Price:</strong> 60 MATIC</p>
+       <p><strong>Price:</strong> 55 MATIC</p>
        <div class="skills"><img src="https://bcrypt.com.br/_next/image?url=%2Fatts%2Fjail_breaker_icon.png&w=48&q=75" alt="Jail Breaker Skill">
       <img src="https://bcrypt.com.br/_next/image?url=%2Fatts%2Fsave_battery_icon.png&w=48&q=75" alt="Save Battery Skill">
       <img src="https://bcrypt.com.br/_next/image?url=%2Fatts%2Fpierce_block_icon.png&w=48&q=75" alt="Pierce Block (Explosion) Skill">
@@ -22,7 +22,7 @@ This page showcases the heroes available for purchase from the site owner,<br>al
        <img src="https://bcrypt.com.br/_next/image?url=%2FHeroSIcon.png&w=16&q=75" alt="Heroi classe S" class="ClasseS">
        <p><strong>ID: </strong>2450340</p>
        <p><strong>Rarity: </strong> Perfect Super Legend</p>
-       <p><strong>Price: </strong>60 MATIC</p>
+       <p><strong>Price: </strong>55 MATIC</p>
        <div class="skills"><img src="https://bcrypt.com.br/_next/image?url=%2Fatts%2Fjail_breaker_icon.png&w=48&q=75" alt="Jail Breaker Skill">
       <img src="https://bcrypt.com.br/_next/image?url=%2Fatts%2Fsave_battery_icon.png&w=48&q=75" alt="Save Battery Skill">
       <img src="https://bcrypt.com.br/_next/image?url=%2Fatts%2Fpierce_block_icon.png&w=48&q=75" alt="Pierce Block (Explosion) Skill">
