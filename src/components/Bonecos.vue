@@ -9,6 +9,11 @@ export default {
   mounted() {
     this.fetchListings();
   },
+  beforeDestroy() {
+    if (this.fetchBcryptDataTimeout) {
+      clearTimeout(this.fetchBcryptDataTimeout);
+    }
+  },
   methods: {
     getSquareClass(listing) {
         const formattedPrice = this.getPrice(listing);
@@ -37,7 +42,7 @@ export default {
         console.error('Erro ao buscar listagens:', error);
       }
     },
-    async fetchBcryptData() {
+    async fetchBcryptDataOnClick() {
     const fieldsToFetch = ['rarity', 'level', 'battery', 'image']; // Include 'image' field
     const rarityMap = {
         'C': 'Common',
@@ -110,6 +115,7 @@ export default {
 
 
 <template>
+  <div class="botaoFetch"><button @click="fetchBcryptDataOnClick">Get Heroes</button></div>
 <div class="main">
   <component :is="currentComponent"/>
     <div v-for="(listing, index) in listings" :key="index" :class="['quadradoInfo', getSquareClass(listing)]">
@@ -133,6 +139,9 @@ export default {
   
   
   <style scoped> 
+  .botaoFetch {
+    background-color: #f9f9f9;
+  }
 .imageHero{
   max-width: 78px;
   height: 75px;

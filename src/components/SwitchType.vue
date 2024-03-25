@@ -1,14 +1,14 @@
 <template>
   <div class="type">
     <div class="test">
-      <button class="butao" :class="{ active: activeElement === 'Bonecos' }" @click="Bonecos()">
+      <button class="butao" :class="{ active: activeElement === 'IconHero' }" @click="toggleActive('IconHero')">
         <img src="../../images/IconHero.png" alt="Pepe Hero Icon" class="typeSwitch">
       </button>
-      <button class="butao" :class="{ active: activeElement === 'Casas' }" @click="Casas()">
+      <button class="butao" :class="{ active: activeElement === 'iconHouse' }" @click="toggleActive('iconHouse')">
         <img src="../../images/iconHouse.png" alt="House Icon" class="typeSwitch casa">
       </button>
-      <button class="butao" :class="{ active: activeElement === 'Check' }" @click="Check()">
-        <img src="../../images/check.png" alt="Check Icon" class="typeSwitch">
+      <button class="butao" :class="{ active: activeElement === 'iconCheck' }" @click="toggleActive('iconCheck')">
+        <img src="../../images/check.png" alt="House Icon" class="typeSwitch">
       </button>
     </div>
   </div>
@@ -16,22 +16,34 @@
 
 <script>
 export default {
+  data() {
+    return {
+      activeElement: 'IconHero' 
+    };
+  },
   methods: {
-    Bonecos() {
-    this.$emit('trocarComponente', 'Bonecos');
-    this.trocarComponente();
-  },
-  Casas() {
-    this.$emit('trocarComponente', 'Casas');
-    this.trocarComponente();
-  },
-  Check() {
-    this.$emit('trocarComponente', 'Check');
-    this.trocarComponente();
+    toggleActive(element) {
+  this.activeElement = element;
+  let componente;
+  switch (element) {
+    case 'IconHero':
+      componente = 'Bonecos';
+      break;
+    case 'iconHouse':
+      componente = 'Casas';
+      break;
+    case 'iconCheck':
+      componente = 'Check';
+      break;
+    default:
+      componente = 'Bonecos'; // Valor padrão caso nenhum corresponda
   }
+  this.$emit('trocarComponente', componente);
 }
-}
+  }
+};
 </script>
+
   
   <style scoped>
   .butao {

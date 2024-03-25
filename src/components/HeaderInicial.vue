@@ -1,31 +1,24 @@
 <template>
-    <nav>
-      <div class="logo">
-        <h1>BombPrice</h1>
-      </div>
-      <div class="right">
-        <a class="home" @click="home">OpenSea</a>
-      <a class="donate" @click="doar">Donate</a>
+  <nav>
+    <div class="logo">
+      <h1>BombPrice</h1>
     </div>
-
-      
-    </nav>
+    <div class="right">
+      <a class="home" @click="goTo('Bonecos')">OpenSea</a>
+      <a class="donate" @click="goTo('Donate')">Donate</a>
+    </div>
+  </nav>
 </template>
-
 
 <script>
 export default {
   methods: {
-    doar() {
-      this.$emit('trocarHeader');
-    },
-    home() {
-      this.$emit('trocarHeader');
+    goTo(componentName) {
+      this.$emit('trocarComponente', componentName);
     }
   }
 }
 </script>
-
 <style scoped>
 
 nav {
