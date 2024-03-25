@@ -4,15 +4,14 @@ export default {
     return {
       listings: [],
       apiKey: 'bdf69195623d4a828d92a290ab965909',
+      bcryptController: null,
     };
+  },
+  beforeDestroy() {
+    this.fetchBcryptDataCancel();
   },
   mounted() {
     this.fetchListings();
-  },
-  beforeDestroy() {
-    if (this.fetchBcryptDataTimeout) {
-      clearTimeout(this.fetchBcryptDataTimeout);
-    }
   },
   methods: {
     getSquareClass(listing) {
@@ -43,6 +42,7 @@ export default {
       }
     },
     async fetchBcryptDataOnClick() {
+      
     const fieldsToFetch = ['rarity', 'level', 'battery', 'image']; // Include 'image' field
     const rarityMap = {
         'C': 'Common',
@@ -62,7 +62,15 @@ export default {
         const listing = this.listings[i];
         const identifier = this.getIdentifier(listing);
 
-        try {
+        if (this.bcryptController) {
+        // Se houver, cancela a requisição anterior
+        this.bcryptController.abort();
+      }
+      
+      // Cria um novo controlador de sinal de interrupção para a nova requisição
+      this.bcryptController = new AbortController();
+      
+      try {
             const response = await fetch(`https://api.bcrypt.com.br/bhero/pol/${identifier}`);
             const data = await response.json();
 
@@ -97,6 +105,11 @@ export default {
         await this.delay(1000);
     }
 },
+fetchBcryptDataCancel() {
+      if (this.bcryptController) {
+        this.bcryptController.abort();
+      }
+      },
     delay(ms) {
       return new Promise(resolve => setTimeout(resolve, ms));
     },

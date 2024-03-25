@@ -35,13 +35,8 @@ export default {
   methods: {
     trocarComponente(element) {
     this.componenteAtual = element;
-    if (element !== 'Bonecos') {
-        this.fetchBcryptDataEnabled = false;
-      } else {
-        this.fetchBcryptDataEnabled = true;
-      }
-  }
-  }
+    }
+  },
 }
 </script>
 
