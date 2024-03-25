@@ -1,6 +1,8 @@
 <template>
-<div id="app">
+  <div id="app">
+    <h2 class="title">Developed by <a href="https://github.com/tomazmpp">Tomaz</a></h2>
     <HeaderInicial @trocarComponente="trocarComponente" />
+    <SwitchType @trocarComponente="trocarComponente" v-if="componenteAtual !== 'Donate'" />
     <component :is="componenteAtual" />
   </div>
 </template>
@@ -9,12 +11,18 @@
 import HeaderInicial from './components/HeaderInicial.vue'
 import Bonecos from './components/Bonecos.vue'
 import Donate from './components/Donate.vue'
+import SwitchType from './components/SwitchType.vue'
+import Casas from './components/Casas.vue'
+import Check from './components/Check.vue'
 
 export default {
   components: {
     HeaderInicial,
     Bonecos,
     Donate,
+    SwitchType,
+    Casas,
+    Check
   },
   data() {
     return {
@@ -22,12 +30,24 @@ export default {
     }
   },
   methods: {
-    trocarComponente() {
-      this.componenteAtual = (this.componenteAtual === 'Bonecos') ? 'Donate' : 'Bonecos';
-    }
+    trocarComponente(element) {
+    this.componenteAtual = element;
+    if (element !== 'Bonecos') {
+        this.fetchBcryptDataEnabled = false; // Desabilitar as requisições ao trocar de componente
+      } else {
+        this.fetchBcryptDataEnabled = true; // Habilitar as requisições ao voltar para o componente 'Bonecos'
+      }
+  }
   }
 }
 </script>
 
+
 <style>
+.title {
+  color: black;
+}
+#app {
+  justify-content: center;
+}
 </style>

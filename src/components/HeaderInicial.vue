@@ -1,36 +1,26 @@
 <template>
-    <nav>
-      <div class="logo">
-        <h1>BombPrice</h1>
-      </div>
-      <div class="right">
-        <a class="home" @click="home">OpenSea</a>
-      <a class="donate" @click="doar">Donate</a>
+  <nav>
+    <div class="logo">
+      <h1>BombPrice</h1>
     </div>
-
-      <div class="hamburger">
-        <span class="line"></span>
-        <span class="line"></span>
-        <span class="line"></span>
-      </div>
-    </nav>
+    <div class="right">
+      <a class="home" @click="goTo('Bonecos')">OpenSea</a>
+      <a class="donate" @click="goTo('Donate')">Donate</a>
+    </div>
+  </nav>
 </template>
-
 
 <script>
 export default {
   methods: {
-    doar() {
-      this.$emit('trocarComponente');
-    },
-    home() {
-      this.$emit('trocarComponente');
+    goTo(componentName) {
+      this.$emit('trocarComponente', componentName);
     }
   }
 }
 </script>
-
 <style scoped>
+
 nav {
   background-color:#2a3542;
   border-top-left-radius: 10px;
@@ -70,46 +60,12 @@ nav .logo h1 {
   padding: 5%;
   border-radius: 15px;
   color: white;
+  cursor: pointer;
 }
 
 .home {
   padding: 5%;
-}
-.hamburger {
-  display: none;
   cursor: pointer;
-}
-
-.hamburger .line {
-  width: 25px;
-  height: 1px;
-  background-color: #1f1f1f;
-  display: block;
-  margin: 7px auto;
-  transition: all 0.3s ease-in-out;
-}
-
-.hamburger-active {
-  transition: all 0.3s ease-in-out;
-  transition-delay: 0.6s;
-  transform: rotate(45deg);
-}
-
-.hamburger-active .line:nth-child(2) {
-  width: 0px;
-}
-
-.hamburger-active .line:nth-child(1),
-.hamburger-active .line:nth-child(3) {
-  transition-delay: 0.3s;
-}
-
-.hamburger-active .line:nth-child(1) {
-  transform: translateY(12px);
-}
-
-.hamburger-active .line:nth-child(3) {
-  transform: translateY(-5px) rotate(90deg);
 }
 
 .menubar {
@@ -130,14 +86,25 @@ nav .logo h1 {
   left: 0;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
+h1 {
+  cursor: pointer;
+}
 
 @media screen and (max-width: 790px) {
-  .hamburger {
-    display: block;
-  }
-  nav ul {
+  h1 {
     display: none;
   }
+  
+  .right {
+    justify-content: center;
+  }
+  
+  nav {
+    padding: 0; /* Changed from .nav to nav */
+    justify-content: center;
+    height: 75px;
+  }
 }
+
 
 </style>
