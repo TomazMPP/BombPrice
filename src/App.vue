@@ -36,9 +36,9 @@ export default {
     trocarComponente(element) {
     this.componenteAtual = element;
     if (element !== 'Bonecos') {
-        this.fetchBcryptDataEnabled = false; // Desabilitar as requisições ao trocar de componente
+        this.fetchBcryptDataEnabled = false;
       } else {
-        this.fetchBcryptDataEnabled = true; // Habilitar as requisições ao voltar para o componente 'Bonecos'
+        this.fetchBcryptDataEnabled = true;
       }
   }
   }
@@ -52,5 +52,11 @@ export default {
 }
 #app {
   justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+    #app {
+      width: 100%;
+    }
 }
 </style>
