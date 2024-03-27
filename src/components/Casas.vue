@@ -73,7 +73,10 @@ export default {
 </script>
 
 <template>
-    <div class="botaoFetch"><button @click="fetchBcryptDataOnClick">Get Houses</button></div>
+    <div class="botaoFetch"><button @click="fetchBcryptDataOnClick">Get Houses</button>
+      <p class="warning">
+To get the houses data, you must click the button above</p>
+</div>
 <div class="main">
   <component :is="currentComponent"/>
     <div v-for="(listing, index) in listings" :key="index" class="quadradoInfo">
@@ -99,6 +102,14 @@ export default {
   
   
   <style scoped> 
+  .warning {
+    background-color: #f9f9f9;
+    padding: 0;
+    margin: 0;
+    margin-top: 15px;
+    color: black;
+  }
+
   .botaoFetch {
     background-color: #f9f9f9;
   }

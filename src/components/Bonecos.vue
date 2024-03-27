@@ -128,7 +128,12 @@ fetchBcryptDataCancel() {
 
 
 <template>
-  <div class="botaoFetch"><button @click="fetchBcryptDataOnClick">Get Heroes</button></div>
+  <div class="botaoFetch">
+    
+    <button @click="fetchBcryptDataOnClick">Get Heroes</button>
+    <p class="warning">
+To get the heroes data, you must click the button above</p>
+  </div>
 <div class="main">
   <component :is="currentComponent"/>
     <div v-for="(listing, index) in listings" :key="index" :class="['quadradoInfo', getSquareClass(listing)]">
@@ -152,6 +157,13 @@ fetchBcryptDataCancel() {
   
   
   <style scoped> 
+    .warning {
+    background-color: #f9f9f9;
+    padding: 0;
+    margin: 0;
+    margin-top: 15px;
+    color: black;
+  }
   .botaoFetch {
     background-color: #f9f9f9;
   }
