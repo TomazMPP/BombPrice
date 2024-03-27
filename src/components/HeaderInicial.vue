@@ -35,6 +35,7 @@ nav {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   z-index: 1;
+  overflow:hidden;
 }
 nav .logo {
   display: flex;
@@ -55,7 +56,7 @@ nav .logo h1 {
 
 .right {
   display: flex;
-  gap: 30px;
+  gap: 20px;
 }
 
 .donate {
@@ -64,6 +65,7 @@ nav .logo h1 {
   border-radius: 15px;
   color: white;
   cursor: pointer;
+  margin-right: 30px;
 }
 
 .home {
@@ -103,7 +105,7 @@ h1 {
   }
   
   nav {
-    padding: 0; /* Changed from .nav to nav */
+    padding: 0;
     justify-content: center;
     height: 75px;
   }

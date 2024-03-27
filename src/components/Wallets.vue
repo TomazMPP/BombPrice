@@ -93,7 +93,7 @@ export default {
       return rarityMap[rarity] || rarity;
     },
     mapRarityClass(rarity) {
-      return rarity === 'SL' ? 'quadradoSuperLenda' : rarity === 'L' ? 'quadradoLendario' : rarity === 'E' ? 'quadradoEpico' : rarity === 'R' ? 'quadradoRaro' : '';
+      return rarity === 'SL' ? 'quadradoSuperLenda' : rarity === 'L' ? 'quadradoLendario' : rarity === 'E' ? 'quadradoEpico' : rarity === 'R' ? 'quadradoRaro' : rarity === 'SR' ? 'quadradoSRaro' : '';
     }
   }
 };
@@ -101,7 +101,9 @@ export default {
 
 
 <style scoped>
-
+.quadradoSRaro {
+  background-color: #735874 !important;
+}
 .quadradoRaro {
   background-color: #2c852c !important;
 

@@ -5,6 +5,7 @@ export default {
       listings: [],
       apiKey: 'bdf69195623d4a828d92a290ab965909',
       bcryptController: null,
+      showMain: false,
     };
   },
   beforeDestroy() {
@@ -42,7 +43,7 @@ export default {
       }
     },
     async fetchBcryptDataOnClick() {
-      
+      this.showMain = true;
     const fieldsToFetch = ['rarity', 'level', 'battery', 'image']; // Include 'image' field
     const rarityMap = {
         'C': 'Common',
@@ -134,7 +135,7 @@ fetchBcryptDataCancel() {
     <p class="warning">
 To get the heroes data, you must click the button above</p>
   </div>
-<div class="main">
+<div class="main" v-if="showMain">
   <component :is="currentComponent"/>
     <div v-for="(listing, index) in listings" :key="index" :class="['quadradoInfo', getSquareClass(listing)]">
         <img :src="listing.bcryptData && listing.bcryptData.image" alt="Loading info..." class="imageHero" style="display: block; width: 100%;">
@@ -157,15 +158,21 @@ To get the heroes data, you must click the button above</p>
   
   
   <style scoped> 
+  
     .warning {
     background-color: #f9f9f9;
-    padding: 0;
+
+    padding-top: 0px;
     margin: 0;
     margin-top: 15px;
     color: black;
   }
   .botaoFetch {
     background-color: #f9f9f9;
+    padding-top: 50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 50px;
   }
 .imageHero{
   max-width: 78px;
@@ -192,8 +199,6 @@ padding: 50px;
   border-radius: 10px;
   text-align: left;
   width: 220px;
-
-
 }
 
 ul, li {

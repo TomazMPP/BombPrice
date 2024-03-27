@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <inject />
-    <h2 class="title">Developed by <a href="https://github.com/tomazmpp">Tomaz</a></h2>
+    <h2 class="title">Developed by <a href="https://github.com/TomazMPP/BombPrice">Tomaz</a></h2>
     <HeaderInicial @trocarComponente="trocarComponente" />
-    <SwitchType @trocarComponente="trocarComponente" v-if="componenteAtual !== 'Donate'" />
+    <SwitchType @trocarComponente="trocarComponente" v-if="componenteAtual !== 'Donate' && componenteAtual !== 'Wallets'" />
     <component :is="componenteAtual" />
   </div>
 </template>

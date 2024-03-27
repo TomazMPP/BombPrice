@@ -53,6 +53,7 @@ export default {
     cursor: pointer;
     border: 2px solid black;
     padding: 5%;
+
   }
   
   .active {
@@ -67,9 +68,11 @@ export default {
   .test {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 30px;
     width: fit-content;
     margin-top: 2%;
+    flex-wrap: wrap;
+width: 80%;
   }
   
   .typeSwitch {

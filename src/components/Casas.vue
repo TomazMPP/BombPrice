@@ -4,6 +4,7 @@ export default {
     return {
       listings: [],
       apiKey: 'bdf69195623d4a828d92a290ab965909',
+      showMain: false,
     };
   },
   methods: {
@@ -21,6 +22,7 @@ export default {
       }
     },
     async fetchBcryptDataOnClick() {
+      this.showMain = true;
   const fieldsToFetch = ['size', 'charge', 'capacity', 'image', 'type']; // Adicionando 'type' como campo
 
   for (let i = 0; i < this.listings.length; i++) {
@@ -77,7 +79,7 @@ export default {
       <p class="warning">
 To get the houses data, you must click the button above</p>
 </div>
-<div class="main">
+<div class="main" v-if="showMain">
   <component :is="currentComponent"/>
     <div v-for="(listing, index) in listings" :key="index" class="quadradoInfo">
         <img :src="listing.bcryptData && listing.bcryptData.image" alt="Loading info..." class="imageHero" style="display: block; width: 100%;">
@@ -112,6 +114,9 @@ To get the houses data, you must click the button above</p>
 
   .botaoFetch {
     background-color: #f9f9f9;
+    padding: 50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
 .imageHero{
   max-width: 88px;
