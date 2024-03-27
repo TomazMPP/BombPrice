@@ -16,9 +16,6 @@ During the transition of the game to a new phase, the OpenSea collection failed 
 ## 🤝  Contributions:
 Contributions to this project are welcome. If you find any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
 
-## ⚖️ License:
-This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute it as per the terms of the license.
-
 ## 📝  Disclaimer:
 This project is not affiliated with OpenSea or BombCrypto. It is an independent effort to enhance the user experience within the Web3 ecosystem by addressing the issue of missing data in the OpenSea collection.
 
@@ -35,3 +32,6 @@ This project is not affiliated with OpenSea or BombCrypto. It is an independent 
 
 - **Backlog:**
   - 🟦 Real-time synchronization of all listed NFTs on OpenSea via direct integration with the Polygon Network, instead of OpenSea API.
+
+## ⚖️ License:
+This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute it as per the terms of the license.
