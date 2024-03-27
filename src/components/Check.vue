@@ -2,7 +2,6 @@
  <p class="warning">
 This page showcases the heroes available for purchase from the site owner,<br>always offered at competitive prices and ensuring a safe transaction.</p>
     <div class="main">
-      </div>
       <div class="casa quadradoInfo">
        <img src="https://bcrypt.com.br/_next/image?url=%2Fbhouse%2FTinyHouse.png&w=128&q=75" alt="Boneco do BombCrypto" style="width: 75px; padding: 5%;">  
        <p><strong>ID: </strong>601</p>
