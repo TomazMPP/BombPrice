@@ -14,10 +14,6 @@ This page showcases the heroes available for purchase from the site owner,<br>al
     </div>
   </template>
   
-  <script>
-
-  </script>
-  
   <style scoped> 
 
   .casa {
