@@ -13,9 +13,7 @@ This page showcases the heroes available for purchase from the site owner,<br>al
       </div>
     </div>
   </template>
-  
   <style scoped> 
-
   .casa {
     background-color: rgb(14, 108, 145) !important;
   }
