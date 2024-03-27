@@ -4,6 +4,7 @@
       <h1>BombPrice</h1>
     </div>
     <div class="right">
+      <a class="wallet" @click="goTo('Wallets')"><img class="menuImg" src="https://bcrypt.com.br/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fwallets.f995be22.png&w=256&q=75" alt="Drawing of a wallet"></a>
       <a class="home" @click="goTo('Bonecos')">OpenSea</a>
       <a class="donate" @click="goTo('Donate')">Donate</a>
     </div>
@@ -20,7 +21,9 @@ export default {
 }
 </script>
 <style scoped>
-
+.menuImg {
+  width: 40px;
+}
 nav {
   background-color:#2a3542;
   border-top-left-radius: 10px;

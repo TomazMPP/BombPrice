@@ -16,6 +16,7 @@ import Donate from './components/Donate.vue'
 import SwitchType from './components/SwitchType.vue'
 import Casas from './components/Casas.vue'
 import Check from './components/Check.vue'
+import Wallets from './components/Wallets.vue'
 
 export default {
   components: {
@@ -25,6 +26,7 @@ export default {
     SwitchType,
     Casas,
     Check,
+    Wallets,
     inject
   },
   data() {
