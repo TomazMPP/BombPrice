@@ -31,6 +31,7 @@ This wallet does not have heroes or houses. <br>
   <div v-for="house in rarityData.houses" :key="house.id" :class="['quadradoInfo', mapRarityClass(house.rarity)]">
     <div v-if="house.image"><img :src="house.image" alt="House Image"></div>
     <div><strong>ID:</strong> {{ house.id }}</div>
+    <div><strong>Rarity:</strong> {{ mapHouseRarity(house.rarity) }}</div>
     <div><strong>Recovery:</strong> {{ house.recovery }}</div>
     <div><strong>Capacity:</strong> {{ house.capacity }}</div>
 </div>
@@ -114,6 +115,17 @@ export default {
       };
       return rarityMap[rarity] || rarity;
     },
+    mapHouseRarity(rarity) {
+  const rarityMap = {
+    '0': 'Tiny House',
+    '1': 'Mini House',
+    '2': 'Lux House',
+    '3': 'Pen House',
+    '4': 'Villa',
+    '5': 'Super Villa'
+  };
+  return rarityMap[rarity] || rarity;
+},
     mapRarityClass(rarity) {
       return rarity === 'SL' ? 'quadradoSuperLenda' : rarity === 'L' ? 'quadradoLendario' : rarity === 'E' ? 'quadradoEpico' : rarity === 'R' ? 'quadradoRaro' : rarity === 'SR' ? 'quadradoSRaro' : '';
     }
