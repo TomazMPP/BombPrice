@@ -2,13 +2,14 @@
   <div class="type">
     <div class="test">
       <button class="butao" :class="{ active: activeElement === 'IconHero' }" @click="toggleActive('IconHero')">
-        <img src="https://i.imgur.com/j83LEI3.png" alt="Pepe Hero Icon" class="typeSwitch">
+        <img src="https://i.imgur.com/j83LEI3.png" alt="Pepe Hero Icon" class="typeSwitch"> Heroes
       </button>
       <button class="butao" :class="{ active: activeElement === 'iconHouse' }" @click="toggleActive('iconHouse')">
-        <img src="https://i.imgur.com/sSU7vOJ.png" alt="House Icon" class="typeSwitch casa">
+        <img src="https://i.imgur.com/sSU7vOJ.png" alt="House Icon" class="typeSwitch casa"> Houses
       </button>
       <button class="butao" :class="{ active: activeElement === 'iconCheck' }" @click="toggleActive('iconCheck')">
         <img src="https://imagepng.org/wp-content/uploads/2019/12/check-icone-scaled.png" alt="House Icon" class="typeSwitch">
+        Verified
       </button>
     </div>
   </div>
@@ -47,20 +48,22 @@ export default {
   
   <style scoped>
   .butao {
-    background-color: #f9f9f9;
-    border: none;
+    background-color: #CAD2C5;
     padding: 0;
     cursor: pointer;
     border: 2px solid black;
     padding: 5%;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #2F3E46;
   }
   
   .active {
-    background-color: #b5c6da;
+    background-color: #84A98C;
   }
   .type {
-    background-color: #f9f9f9;
+    background-color: #52796F;
     padding: 2%;
     display: flex;
     justify-content: center;

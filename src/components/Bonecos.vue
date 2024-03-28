@@ -117,9 +117,9 @@ export default {
 
 
 <template>
-  <div class="botaoFetch">
+ <div :class="{ 'botaoFetch': true, 'removeBorderRadius': showMain }">
     
-    <button @click="fetchBcryptDataOnClick">Get Heroes</button>
+    <button class="bta" @click="fetchBcryptDataOnClick">Get Heroes</button>
     <p class="warning">
 To get the heroes data, you must click the button above</p>
   </div>
@@ -146,21 +146,26 @@ To get the heroes data, you must click the button above</p>
   
   
   <style scoped> 
-  
+  .bta {
+    background-color: #2F3E46;
+  }
+  .removeBorderRadius {
+    border-bottom-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+  }
     .warning {
-    background-color: #f9f9f9;
-
+    background-color: #52796F;
     padding-top: 0px;
     margin: 0;
     margin-top: 15px;
-    color: black;
+    color: white;
   }
   .botaoFetch {
-    background-color: #f9f9f9;
+    background-color: #52796F;
     padding-top: 50px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
     padding: 50px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
   }
 .imageHero{
   max-width: 78px;
@@ -174,7 +179,7 @@ To get the heroes data, you must click the button above</p>
   grid-auto-flow: dense;
   gap: 50px;
 padding: 50px;
-  background-color: #f9f9f9;
+  background-color: #52796F;
   border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     justify-content: center;

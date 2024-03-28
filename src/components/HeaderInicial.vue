@@ -25,7 +25,7 @@ export default {
   width: 40px;
 }
 nav {
-  background-color:#2a3542;
+  background-color:#2F3E46;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   padding: 5px 5%;
@@ -37,21 +37,10 @@ nav {
   z-index: 1;
   overflow:hidden;
 }
-nav .logo {
-  display: flex;
-  align-items: center;
-}
-nav .logo img {
-  height: 25px;
-  width: auto;
-  margin-right: 10px;
-}
+
 nav .logo h1 {
   font-size: 1.3rem;
-  background: linear-gradient(to right, #c450fa 0%, #0040ff 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #CAD2C5;
 }
 
 .right {
@@ -60,7 +49,7 @@ nav .logo h1 {
 }
 
 .donate {
-  background-color: rgb(11, 146, 17);
+  background-color: #52796F;
   padding: 5%;
   border-radius: 15px;
   color: white;
@@ -71,6 +60,7 @@ nav .logo h1 {
 .home {
   padding: 5%;
   cursor: pointer;
+  color: #CAD2C5;
 }
 
 .menubar {

@@ -14,7 +14,8 @@ This page showcases the heroes available for purchase from the site owner,<br>al
   </template>
   <style scoped> 
   .casa {
-    background-color: rgb(14, 108, 145) !important;
+    background-color: #354F52 !important;
+
   }
 .lendario {
   background-color: #ffc207 !important;
@@ -33,11 +34,11 @@ This page showcases the heroes available for purchase from the site owner,<br>al
   position: relative;
   right: 30px;
 }
-  .warning {
-    background-color: #f9f9f9;
-    padding: 0;
+.warning {
+    background-color: #52796F;
+    padding-top: 0px;
     margin: 0;
-    color: black;
+    color: white;
   }
   .skills {
     margin-top: 9px;
@@ -55,7 +56,7 @@ This page showcases the heroes available for purchase from the site owner,<br>al
   grid-auto-flow: dense;
   gap: 50px;
 padding: 50px;
-  background-color: #f9f9f9;
+  background-color: #52796F;
   border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     justify-content: center;

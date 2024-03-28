@@ -143,7 +143,7 @@ margin-right: 30px;
 }
 .main {
 
-  background-color: #f9f9f9;
+  background-color: #CAD2C5;
   border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     display: flex;
@@ -164,7 +164,7 @@ margin-right: 30px;
   --height-of-input: 40px;
   --border-height: 2px;
   --input-bg: #fff;
-  --border-color: #2f2ee9;
+  --border-color: #2F3E46;
   --border-radius: 30px;
   --after-border-radius: 1px;
   position: relative;

@@ -75,7 +75,8 @@ export default {
 </script>
 
 <template>
-    <div class="botaoFetch"><button @click="fetchBcryptDataOnClick">Get Houses</button>
+     <div :class="{ 'botaoFetch': true, 'removeBorderRadius': showMain }">
+      <button class="bta" @click="fetchBcryptDataOnClick">Get Houses</button>
       <p class="warning">
 To get the houses data, you must click the button above</p>
 </div>
@@ -104,19 +105,27 @@ To get the houses data, you must click the button above</p>
   
   
   <style scoped> 
-  .warning {
-    background-color: #f9f9f9;
-    padding: 0;
-    margin: 0;
-    margin-top: 15px;
-    color: black;
+    .bta {
+    background-color: #2F3E46;
   }
 
+    .removeBorderRadius {
+    border-bottom-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+  }
+  .warning {
+    background-color: #52796F;
+    padding-top: 0px;
+    margin: 0;
+    margin-top: 15px;
+    color: white;
+  }
   .botaoFetch {
-    background-color: #f9f9f9;
+    background-color: #52796F;
+    padding-top: 50px;
     padding: 50px;
-    border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
   }
 .imageHero{
   max-width: 88px;
@@ -130,7 +139,7 @@ To get the houses data, you must click the button above</p>
   grid-auto-flow: dense;
   gap: 50px;
 padding: 50px;
-  background-color: #f9f9f9;
+  background-color: #52796F;
   border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     justify-content: center;
