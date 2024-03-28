@@ -21,13 +21,13 @@ This project is not affiliated with OpenSea or BombCrypto. It is an independent 
 
 ## 🗺️ RoadMap
 - **Done:**
-  - ✅ Get heroes listed from OpenSea (**Completed on 25/7**).
-  - ✅ Validate heroes using Bcrypt API (**Completed on 25/7**).
-  - ✅ Get houses listed on OpenSea (**Completed on 25/7**).
-  - ✅ Validate houses using Bcrypt API. (**Completed on 25/7**).
-  - ✅ Implement wallet NFT search (**Completed on 27/7**).
-  - ✅ Complete visual rebranding for a cohesive and modern look.
-  
+  - ✅ Get heroes listed from OpenSea (**Completed on 25/3**).
+  - ✅ Validate heroes using Bcrypt API (**Completed on 25/3**).
+  - ✅ Get houses listed on OpenSea (**Completed on 25/3**).
+  - ✅ Validate houses using Bcrypt API. (**Completed on 25/3**).
+  - ✅ Implement wallet NFT search (**Completed on 27/3**).
+  - ✅ Complete visual rebranding for a cohesive and modern look. (**Completed on 28/3**)
+
 - **Ongoing:**
   - 🟧 Enhance responsiveness of pages and components for phones and tablets to improve user experience.
 
