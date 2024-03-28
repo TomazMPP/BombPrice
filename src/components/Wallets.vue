@@ -1,5 +1,7 @@
 <template>
   <div class="main">
+    <p class="warning" v-if="!fetchingData">
+This feature is not yet 100% functional.<br>For a more accurate check, use <a href="https://bcrypt.com.br/pol/wallets">Bcrypt.</a></p>
     <form class="form" @submit.prevent="fetchData">
       <button type="submit">
         <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
@@ -19,18 +21,29 @@
     </p>
     <p v-if="rarityData && rarityData.houses.length === 0 && rarityData.heroes.length === 0">
       <strong style="color: red;">Attention!</strong> <br>
-This wallet does not have heroes or houses. <br><br>
+This wallet does not have heroes or houses. <br>
+<strong style="color: red;">*</strong>BCrypt API often have errors when searching wallets with only houses<br><br>
 <strong>Wallet:</strong> {{ wallet }}
     </p>
+
     <div class="heroisClas" v-if="rarityData">
-      <div v-for="hero in rarityData.heroes" :key="hero.id" :class="['quadradoInfo', mapRarityClass(hero.rarity)]">
-        <div><strong>ID:</strong> {{ hero.id }}</div>
-        <div><strong>Rarity:</strong> {{ mapRarity(hero.rarity) }}</div>
-        <div><strong>Level:</strong> {{ hero.level }}</div>
-        <div><strong>Battery:</strong> {{ formatBattery(hero.battery) }}</div>
-        <div><strong>P: 💥</strong> {{ hero.bombPower }} | <strong>ST: <img src="https://bcrypt.com.br/_next/image?url=%2Fskills%2Fskill5.webp&w=32&q=75" alt="Speed Skill" style="width: 13px;"> </strong> {{ hero.stamina }} | <strong>SP: <img src="https://bcrypt.com.br/_next/image?url=%2Fskills%2Fskill1.webp&w=32&q=75" alt="Speed Skill" style="width: 15px;"></strong> {{ hero.speed }}</div>
-        <div></div>
-      </div>
+
+  <div v-for="house in rarityData.houses" :key="house.id" :class="['quadradoInfo', mapRarityClass(house.rarity)]">
+    <div v-if="house.image"><img :src="house.image" alt="House Image"></div>
+    <div><strong>ID:</strong> {{ house.id }}</div>
+    <div><strong>Recovery:</strong> {{ house.recovery }}</div>
+    <div><strong>Capacity:</strong> {{ house.capacity }}</div>
+</div>
+
+  <div v-for="hero in rarityData.heroes" :key="hero.id" :class="['quadradoInfo', mapRarityClass(hero.rarity)]">
+    <div v-if="hero.image"><img :src="hero.image" class="imgThing" alt="Hero Image"></div>
+    <div><strong>ID:</strong> {{ hero.id }}</div>
+    <div><strong>Rarity:</strong> {{ mapRarity(hero.rarity) }}</div>
+    <div><strong>Level:</strong> {{ hero.level }}</div>
+    <div><strong>Battery:</strong> {{ formatBattery(hero.battery) }}</div>
+    <div><strong>P: 💥</strong> {{ hero.bombPower }} | <strong>ST: <img src="https://bcrypt.com.br/_next/image?url=%2Fskills%2Fskill5.webp&w=32&q=75" alt="Speed Skill" style="width: 13px;"> </strong> {{ hero.stamina }} | <strong>SP: <img src="https://bcrypt.com.br/_next/image?url=%2Fskills%2Fskill1.webp&w=32&q=75" alt="Speed Skill" style="width: 15px;"></strong> {{ hero.speed }}</div>
+    <div></div>
+  </div>
     </div>
   </div>
 </template>
@@ -43,11 +56,13 @@ export default {
       rarityData: null,
       status: '',
       notFoundError: false,
+      fetchingData: false
     };
   },
   methods: {
     async fetchData() {
       try {
+        this.fetchingData = true;
         const response = await fetch(`https://api.bcrypt.com.br/wallet/pol/${this.wallet}`);
         if (response.status === 404) {
           this.notFoundError = true;
@@ -56,11 +71,18 @@ export default {
         
         const data = await response.json();
         this.rarityData = data;
+        this.rarityData.houses.forEach((house) => {
+      house.image = `https://bcrypt.com.br/_next/image?url=%2Fbhouse%2F${house.image}House.png&w=128&q=75`;
+    });
+    this.rarityData.heroes.forEach((hero) => {
+      hero.image = `https://bcrypt.com.br/_next/image?url=%2Fbhero%2F${hero.image}&w=128&q=75`;
+    });
+
         this.notFoundError = false;
-        if (data.status) { // Verificando se existe status na resposta
-          this.status = data.status; // Atribuindo status ao data
+        if (data.status) { 
+          this.status = data.status; 
         } else {
-          this.status = ''; // Caso não exista status, atribuindo string vazia
+          this.status = '';
         }
       } catch (error) {
         console.error('Error fetching data:', error);
@@ -70,7 +92,7 @@ export default {
     resetForm() {
       this.wallet = '';
       this.rarityData = null;
-      this.status = ''; // Resetando status ao limpar o formulário
+      this.status = ''; 
     },
     formatBattery(battery) {
       if (battery === 0) {
@@ -101,6 +123,19 @@ export default {
 
 
 <style scoped>
+.imgThing {
+  max-width: 78px;
+  height: 75px;
+  padding: 5%;
+
+}
+.warning {
+  color: black;
+    padding-top: 0px;
+    margin: 0;
+    margin-top: 30px;
+  }
+
 .quadradoSRaro {
   background-color: #735874 !important;
 }
@@ -178,6 +213,7 @@ margin-right: 30px;
   background: var(--input-bg,#fff);
   border: 1px solid black;
   margin: 50px;
+  margin-top: 20px;
 }
 /* styling of Input */
 .input {
