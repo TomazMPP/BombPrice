@@ -22,7 +22,6 @@ export default {
       }
     },
     async fetchBcryptDataOnClick() {
-      this.showMain = true;
   const fieldsToFetch = ['size', 'charge', 'capacity', 'image', 'type']; // Adicionando 'type' como campo
 
   for (let i = 0; i < this.listings.length; i++) {
@@ -30,6 +29,7 @@ export default {
     const identifier = this.getIdentifier(listing);
 
     try {
+      this.showMain = true;
       const response = await fetch(`https://api.bcrypt.com.br/bhouse/pol/${identifier}`);
       const data = await response.json();
 
