@@ -12,6 +12,8 @@ During the transition of the game to a new phase, the OpenSea collection failed 
 - ✅ Mass Data Retrieval: Pulling extensive information about heroes listed on OpenSea to fill the gap in the collection display.
 - ✅ Comprehensive Insights: Providing users with detailed attributes, rarity, and other relevant data for each hero NFT.
 - 🟧 Real-time synchronization of all listed NFTs on OpenSea via direct integration with the Polygon Network, instead of OpenSea API.
+- 🟧 Verified ✔! Curated list of manually verified heroes or houses acknowledged as authentic NFTs. 
+- 🟧 Dedicated user interface where players can input OpenSea links of NFTs (houses or heroes) for automated authenticity validation.
 
 ## 🤝  Contributions:
 Contributions to this project are welcome. If you find any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
@@ -30,10 +32,12 @@ This project is not affiliated with OpenSea or BombCrypto. It is an independent 
   - ✅ Enhance responsiveness of pages and components for phones and tablets to improve user experience. (**Completed on 28/3**).
 
 - **Ongoing:**
-  - 🟧 Optimize website performance for faster response times and smoother user experience.
+  - 🟧 Optimize website performance for faster response times and smoother user experience. (**Est. 29/03**)
+  - 🟧 Verified Listing ✔: Curated list of manually verified heroes or houses acknowledged as authentic NFTs. A 3% fee from the OpenSea price is required for listing. (**Est. 29/03**)
 
 - **Backlog:**
   - 🟦 Real-time synchronization of all listed NFTs on OpenSea via direct integration with the Polygon Network, instead of OpenSea API.
+  - 🟦 Implement a dedicated user interface where players can input OpenSea links of NFTs (houses or heroes) for automated authenticity validation.
 
 ## ⚖️ License:
 This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute it as per the terms of the license.
