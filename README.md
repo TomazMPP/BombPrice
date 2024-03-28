@@ -30,6 +30,7 @@ This project is not affiliated with OpenSea or BombCrypto. It is an independent 
   - ✅ Enhance responsiveness of pages and components for phones and tablets to improve user experience. (**Completed on 28/3**).
 
 - **Ongoing:**
+  - 🟧 Optimize website performance for faster response times and smoother user experience.
 
 - **Backlog:**
   - 🟦 Real-time synchronization of all listed NFTs on OpenSea via direct integration with the Polygon Network, instead of OpenSea API.
