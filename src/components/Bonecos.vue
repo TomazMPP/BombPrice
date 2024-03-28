@@ -110,6 +110,9 @@ export default {
       let formattedPrice = parseFloat(value) / Math.pow(10, 18); // Convertendo para Matic
       return `${formattedPrice} ${currency}`;
     },
+    mapRarityClass(rarity) {
+      return rarity === 'SL' ? 'quadradoSuperLenda' : rarity === 'L' ? 'quadradoLendario' : rarity === 'E' ? 'quadradoEpico' : rarity === 'R' ? 'quadradoRaro' : rarity === 'SR' ? 'quadradoSRaro' : '';
+    },
   },
 };
 
@@ -205,16 +208,25 @@ ul, li {
   margin: 0;
 }
 
+.quadradoSRaro {
+  background-color: #735874 !important;
+}
+.quadradoRaro {
+  background-color: #2c852c !important;
+
+}
+.quadradoEpico {
+  background-color: #8b2a8f !important;
+  color: white !important;
+
+}
 .quadradoLendario {
-  background-color: rgb(161, 97, 12);
+  background-color: rgb(161, 97, 12) !important;
 }
 
 .quadradoSuperLenda {
-  background-color: blue;
-}
-
-.profit {
-    background-color: green;
+  background-color: #ff0759 !important;
+  color: white !important;
 }
 
 .linkOpen {

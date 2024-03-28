@@ -270,4 +270,30 @@ input:not(:placeholder-shown) ~ .reset {
   width: 17px;
   margin-top: 3px;
 }
+@media screen and (max-width: 790px) {
+  .form {
+    padding: 0;
+
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+    .heroisClas {
+        grid-template-columns: repeat(2, minmax(250px, 1fr)); /* 3 itens por linha */
+       
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .heroisClas {
+        grid-template-columns: repeat(1, minmax(300px, 1fr)); /* 2 itens por linha */
+        margin: 0%;
+        align-items: center;
+        
+    }
+
+}
 </style>

@@ -33,6 +33,7 @@ body {
   background-image: url('https://bombcrypto.io/static/media/background.0a2e5466b0f4cdf66d43.png');
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-x: hidden;
 }
 
 h1 {

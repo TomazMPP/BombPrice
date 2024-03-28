@@ -79,6 +79,10 @@ export default {
 @media screen and (max-width: 600px) {
     #app {
       width: 100%;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      margin: 0;
     }
 }
 </style>
