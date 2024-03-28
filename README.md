@@ -27,9 +27,9 @@ This project is not affiliated with OpenSea or BombCrypto. It is an independent 
   - ✅ Validate houses using Bcrypt API. (**Completed on 25/3**).
   - ✅ Implement wallet NFT search (**Completed on 27/3**).
   - ✅ Complete visual rebranding for a cohesive and modern look. (**Completed on 28/3**).
+  - ✅ Enhance responsiveness of pages and components for phones and tablets to improve user experience. (**Completed on 28/3**).
 
 - **Ongoing:**
-  - 🟧 Enhance responsiveness of pages and components for phones and tablets to improve user experience.
 
 - **Backlog:**
   - 🟦 Real-time synchronization of all listed NFTs on OpenSea via direct integration with the Polygon Network, instead of OpenSea API.
