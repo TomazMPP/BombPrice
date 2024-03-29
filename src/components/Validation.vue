@@ -72,9 +72,11 @@ export default {
                 this.buscarDadosNFT(nftNumber);
             } else {
                 this.validNFT = false;
+                this.nftData = null;
             }
         } else {
             this.validNFT = false;
+            this.nftData = null;
             const match = this.openSeaLink.match(/\/(\d+)$/);
             if (match && match[1]) {
                 this.linkCorreto = match[1];
