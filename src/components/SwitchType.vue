@@ -8,7 +8,7 @@
         <img src="https://i.imgur.com/sSU7vOJ.png" alt="House Icon" class="typeSwitch casa"> Houses
       </button>
       <button class="butao" :class="{ active: activeElement === 'iconCheck' }" @click="toggleActive('iconCheck')">
-        <img src="https://imagepng.org/wp-content/uploads/2019/12/check-icone-scaled.png" alt="House Icon" class="typeSwitch">
+        <img src="https://cdn-icons-png.flaticon.com/512/3967/3967122.png" alt="House Icon" class="typeSwitch">
         My listings
       </button>
     </div>
