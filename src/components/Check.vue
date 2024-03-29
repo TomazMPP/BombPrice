@@ -4,11 +4,11 @@ This page showcases the heroes available for purchase from the site owner,<br>al
     <div class="main">
       <div class="casa quadradoInfo">
        <img src="https://bcrypt.com.br/_next/image?url=%2Fbhouse%2FTinyHouse.png&w=128&q=75" alt="Boneco do BombCrypto" style="width: 75px; padding: 5%;">  
-       <p><strong>ID: </strong>601</p>
+       <p><strong>ID: </strong>121</p>
        <p><strong>Rarity: </strong>Tiny House</p>
-       <p><strong>Price: </strong>39 MATIC</p>
+       <p><strong>Price: </strong>35 MATIC</p>
        <div class="skills"><br></div>
-    <a class="buyButton" href="https://opensea.io/assets/matic/0x2d5f4ba3e4a2d991bd72edbf78f607c174636618/601" target="_blank">BUY NOW! (OPENSEA)</a>
+    <a class="buyButton" href="https://opensea.io/assets/matic/0x2d5f4ba3e4a2d991bd72edbf78f607c174636618/121" target="_blank">BUY NOW! (OPENSEA)</a>
       </div>
     </div>
   </template>
