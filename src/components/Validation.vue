@@ -34,7 +34,7 @@
     <div><strong>ID:</strong> {{ nftData.ID }}</div>
     <div><strong>Rarity:</strong> {{ nftData.rarity }}</div>
     <template v-if="nftData && ['Tiny House', 'Mini House', 'Lux House', 'Pen House', 'Villa', 'Super Villa'].includes(nftData.rarity)">
-        <div><strong>Recovery:</strong> {{ nftData.recovery }}</div>
+        <div><strong>Charge:</strong> {{ nftData.charge }}</div>
         <div><strong>Capacity:</strong> {{ nftData.capacity }}</div>
     </template>
     <template v-else>
@@ -89,10 +89,10 @@ export default {
         .then(response => response.json())
         .then(data => {
 
-            let ID, rarity, battery, image, stamina, bombPower, speed, recovery, capacity, level;
+            let ID, rarity, battery, image, stamina, bombPower, speed, charge, capacity, level;
         
         if (nftNumber <= 5000) {
-            ({ ID, rarity, recovery, capacity } = data);
+            ({ ID, rarity, charge, capacity } = data);
             image = `https://bcrypt.com.br/_next/image?url=%2Fbhouse%2F${data.image}House.png&w=128&q=75`;
         } else {
             ({ ID, rarity, level, battery, image, stamina, bombPower, speed } = data);
@@ -127,7 +127,7 @@ export default {
             this.nftData = {
                 ID: data.id,
                 rarity: houseRarityMap[data.rarity],
-                recovery: data.recovery,
+                charge: data.charge,
                 capacity: data.capacity,
                 image,
             };
