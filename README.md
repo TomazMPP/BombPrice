@@ -30,10 +30,9 @@ This project is not affiliated with OpenSea or BombCrypto. It is an independent 
   - ✅ Complete visual rebranding for a cohesive and modern look. (**Completed on 28/3**).
   - ✅ Enhance responsiveness of pages and components for phones and tablets to improve user experience. (**Completed on 28/3**).
   - ✅ Implement a dedicated user interface where players can input OpenSea links of NFTs (houses or heroes) for automated authenticity validation. (**Completed on 29/03**)
-  
+
 - **Ongoing:**
-  - 🟧 Optimize website performance for faster response times and smoother user experience. (**Est. 29/03**)
-  - 🟧 Implement a dedicated user interface where players can input OpenSea links of NFTs (houses or heroes) for automated authenticity validation. (**Est. 29/03**)
+  - 🟧 Optimize website performance for faster response times and smoother user experience. (**Est. 30/03**)
 
 - **Backlog:**
   - 🟦 Real-time synchronization of all listed NFTs on OpenSea via direct integration with the Polygon Network, instead of OpenSea API.
