@@ -66,11 +66,15 @@ nav .logo h1 {
 
 .donate {
   background-color: #52796F;
-  padding: 5%;
   border-radius: 15px;
   color: white;
   cursor: pointer;
-  margin-right: 30px;
+  padding: 10px;
+  margin: 3% 0%;
+  display: flex;
+  align-items: center;
+  max-height: 100%;
+
 }
 
 .home {
@@ -108,7 +112,7 @@ gap: 0px;
 }
 
 @media screen and (max-width: 790px) {
-  h1 {
+  h1, .logoImg {
     display: none;
   }
   
