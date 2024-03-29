@@ -81,13 +81,15 @@ export default {
 
 @media screen and (max-width: 900px) {
   #app {
-  min-width: 500px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    min-width: 0px;
 }
 
 }
 @media screen and (max-width: 600px) {
     #app {
-      width: 100%;
       justify-content: center;
       align-items: center;
       padding: 0;

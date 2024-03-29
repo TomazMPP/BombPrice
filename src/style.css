@@ -24,6 +24,9 @@ a:hover {
   color: #2F3E46;
 }
 
+html {
+  overflow-x: hidden;
+}
 body {
   margin: 0;
   display: flex;
@@ -34,6 +37,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
+
 }
 
 h1 {
@@ -69,6 +73,7 @@ button:focus-visible {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  
 }
 
 @media (prefers-color-scheme: light) {
