@@ -3,7 +3,7 @@
     <inject />
     <h2 class="title">Developed by <a href="https://github.com/TomazMPP/BombPrice" class="linkGit">Tomaz</a></h2>
     <HeaderInicial @trocarComponente="trocarComponente" />
-    <SwitchType @trocarComponente="trocarComponente" v-if="componenteAtual !== 'Donate' && componenteAtual !== 'Wallets'" />
+    <SwitchType @trocarComponente="trocarComponente" v-if="componenteAtual !== 'Donate' && componenteAtual !== 'Wallets' && componenteAtual !== 'Validation'" />
     <component :is="componenteAtual" />
     <img src="https://bombcrypto.io/static/media/BcoinTokenHero.e064f950a30385943c95.png" alt="Bomb Hero" class="bomber">
   </div>
@@ -18,6 +18,7 @@ import SwitchType from './components/SwitchType.vue'
 import Casas from './components/Casas.vue'
 import Check from './components/Check.vue'
 import Wallets from './components/Wallets.vue'
+import Validation from './components/Validation.vue'
 
 export default {
   components: {
@@ -28,6 +29,7 @@ export default {
     Casas,
     Check,
     Wallets,
+    Validation,
     inject
   },
   data() {
@@ -68,6 +70,7 @@ export default {
 }
 #app {
   justify-content: center;
+  min-width: 800px;
 }
 
 @media screen and (max-width: 1500px) {
@@ -76,6 +79,12 @@ export default {
   }
 }
 
+@media screen and (max-width: 900px) {
+  #app {
+  min-width: 500px;
+}
+
+}
 @media screen and (max-width: 600px) {
     #app {
       width: 100%;

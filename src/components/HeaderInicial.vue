@@ -4,7 +4,8 @@
       <h1>BombPrice</h1>
     </div>
     <div class="right">
-      <a class="wallet" @click="goTo('Wallets')"><img class="menuImg" src="https://bcrypt.com.br/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fwallets.f995be22.png&w=256&q=75" alt="Drawing of a wallet"></a>
+      <a class="validation" @click="goTo('Validation')"><img class="menuImg" src="https://imagepng.org/wp-content/uploads/2019/12/check-icone-scaled.png" alt="Drawing of a wallet">Validation</a>
+      <a class="wallet" @click="goTo('Wallets')"><img class="menuImg" src="https://bcrypt.com.br/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fwallets.f995be22.png&w=256&q=75" alt="Drawing of a wallet">Wallet</a>
       <a class="home" @click="goTo('Bonecos')">OpenSea</a>
       <a class="donate" @click="goTo('Donate')">Donate</a>
     </div>
@@ -22,7 +23,14 @@ export default {
 </script>
 <style scoped>
 .menuImg {
-  width: 40px;
+  width: 20px;
+
+}
+
+.wallet, .validation {
+  color: #CAD2C5;
+  cursor: pointer;
+  padding-top: 2%;
 }
 nav {
   background-color:#2F3E46;
@@ -30,12 +38,11 @@ nav {
   border-top-right-radius: 10px;
   padding: 5px 5%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  z-index: 1;
   overflow:hidden;
+gap: 230px;
 }
 
 nav .logo h1 {
@@ -85,6 +92,12 @@ h1 {
   cursor: pointer;
 }
 
+@media screen and (max-width: 900px) {
+  nav {
+gap: 0px;
+  }
+}
+
 @media screen and (max-width: 790px) {
   h1 {
     display: none;
@@ -95,9 +108,7 @@ h1 {
   }
   
   nav {
-    padding: 0;
     justify-content: center;
-    height: 75px;
   }
 }
 
