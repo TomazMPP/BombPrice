@@ -1,12 +1,12 @@
 <template>
   <nav>
     <div class="logo">
-      <h1>BombPrice</h1>
+      <img class="logoImg" src="https://s2.coinmarketcap.com/static/img/coins/200x200/12252.png" alt="Imagem do token bcoin"><h1>BombPrice</h1>
     </div>
     <div class="right">
       <a class="validation" @click="goTo('Validation')"><img class="menuImg" src="https://imagepng.org/wp-content/uploads/2019/12/check-icone-scaled.png" alt="Drawing of a wallet">Validation</a>
       <a class="wallet" @click="goTo('Wallets')"><img class="menuImg" src="https://bcrypt.com.br/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fwallets.f995be22.png&w=256&q=75" alt="Drawing of a wallet">Wallet</a>
-      <a class="home" @click="goTo('Bonecos')">OpenSea</a>
+      <a class="home" @click="goTo('Bonecos')"><img class="menuImg" src="https://cdn.worldvectorlogo.com/logos/opensea.svg" alt="Opensea Logo">OpenSea</a>
       <a class="donate" @click="goTo('Donate')">Donate</a>
     </div>
   </nav>
@@ -22,6 +22,15 @@ export default {
 }
 </script>
 <style scoped>
+.logo {
+  display: inline-flex;
+  gap: 5px;
+  align-items: center;
+}
+.logoImg {
+  width: 20px;
+  height: 20px;
+}
 .menuImg {
   width: 20px;
 
@@ -30,7 +39,7 @@ export default {
 .wallet, .validation {
   color: #CAD2C5;
   cursor: pointer;
-  padding-top: 2%;
+  padding-top: 5%;
 }
 nav {
   background-color:#2F3E46;
@@ -42,7 +51,7 @@ nav {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   overflow:hidden;
-gap: 230px;
+gap: 210px;
 }
 
 nav .logo h1 {
