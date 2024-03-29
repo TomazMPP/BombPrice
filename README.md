@@ -11,7 +11,7 @@ During the transition of the game to a new phase, the OpenSea collection failed 
 - ✅ Bcrypt API Requests: Ensuring the security and authenticity of hero NFTs through validation.
 - ✅ Mass Data Retrieval: Pulling extensive information about heroes listed on OpenSea to fill the gap in the collection display.
 - ✅ Comprehensive Insights: Providing users with detailed attributes, rarity, and other relevant data for each hero NFT.
-- 🟧 Dedicated user interface where players can input OpenSea links of NFTs (houses or heroes) for automated authenticity validation.
+- ✅ Dedicated user interface where players can input OpenSea links of NFTs (houses or heroes) for automated authenticity validation.
 - 🟧 Real-time synchronization of all listed NFTs on OpenSea via direct integration with the Polygon Network, instead of OpenSea API.
 
 ## 🤝  Contributions:
@@ -29,7 +29,8 @@ This project is not affiliated with OpenSea or BombCrypto. It is an independent 
   - ✅ Implement wallet NFT search (**Completed on 27/3**).
   - ✅ Complete visual rebranding for a cohesive and modern look. (**Completed on 28/3**).
   - ✅ Enhance responsiveness of pages and components for phones and tablets to improve user experience. (**Completed on 28/3**).
-
+  - ✅ Implement a dedicated user interface where players can input OpenSea links of NFTs (houses or heroes) for automated authenticity validation. (**Completed on 29/03**)
+  
 - **Ongoing:**
   - 🟧 Optimize website performance for faster response times and smoother user experience. (**Est. 29/03**)
   - 🟧 Implement a dedicated user interface where players can input OpenSea links of NFTs (houses or heroes) for automated authenticity validation. (**Est. 29/03**)
