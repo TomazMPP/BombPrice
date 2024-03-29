@@ -39,14 +39,18 @@ This wallet does not have heroes or houses. <br>
   <div v-for="hero in rarityData.heroes" :key="hero.id" :class="['quadradoInfo', mapRarityClass(hero.rarity)]">
     <div v-if="hero.image"><img :src="hero.image" class="imgThing" alt="Hero Image"></div>
     <div><strong>ID:</strong> {{ hero.id }}</div>
-    <div><strong>Rarity:</strong> {{ mapRarity(hero.rarity) }}</div>
-    <div><strong>Level:</strong> {{ hero.level }}</div>
-    <div><strong>Battery:</strong> {{ formatBattery(hero.battery) }}</div>
+    <div><strong>Rarity:</strong> {{ mapRarity(hero.rarity) }} (Level: {{ hero.level }})</div>
+
     <div><strong>P: 💥</strong> {{ hero.bombPower }} | <strong>ST: <img src="https://bcrypt.com.br/_next/image?url=%2Fskills%2Fskill5.webp&w=32&q=75" alt="Speed Skill" style="width: 13px;"> </strong> {{ hero.stamina }} | <strong>SP: <img src="https://bcrypt.com.br/_next/image?url=%2Fskills%2Fskill1.webp&w=32&q=75" alt="Speed Skill" style="width: 15px;"></strong> {{ hero.speed }}</div>
-    <div></div>
+   <div class="abilities">
+      <div v-for="ability in hero.abilities" :key="ability">
+        <img :src="mapAbilityIcon(ability)" alt="Ability Icon">
+      </div>
+   </div>
+  </div>
+
   </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -61,6 +65,9 @@ export default {
     };
   },
   methods: {
+    mapAbilityIcon(ability) {
+    return `https://bcrypt.com.br/_next/image?url=%2Fatts%2F${ability}_icon.png&w=48&q=75`;
+  },
     async fetchData() {
       try {
         this.fetchingData = true;
@@ -135,6 +142,9 @@ export default {
 
 
 <style scoped>
+.abilities {
+  display: flex;
+}
 .imgThing {
   max-width: 78px;
   height: 75px;

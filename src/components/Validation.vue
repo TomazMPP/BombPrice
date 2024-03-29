@@ -39,9 +39,13 @@
     </template>
     <template v-else>
         <div><strong>Level:</strong> {{ nftData.level }}</div>
-        <div><strong>Battery:</strong> {{ nftData.battery }}</div>
         <div><strong>P: 💥</strong> {{ nftData.bombPower }} | <strong>ST: <img src="https://bcrypt.com.br/_next/image?url=%2Fskills%2Fskill5.webp&w=32&q=75" alt="Speed Skill" style="width: 13px;"> </strong> {{ nftData.stamina }} | <strong>SP: <img src="https://bcrypt.com.br/_next/image?url=%2Fskills%2Fskill1.webp&w=32&q=75" alt="Speed Skill" style="width: 15px;"></strong> {{ nftData.speed }}</div>
-    </template>
+        <div class="abilities">
+    <div v-for="ability in nftData.abilities" :key="ability.name">
+        <img :src="ability.icon" :alt="ability.name">
+    </div>
+</div>
+      </template>
 </div>
 
 <div v-else-if="validNFT && inputProvided">Fetching NFT data...</div>
@@ -62,6 +66,9 @@ export default {
     };
   },
   methods: {
+    mapAbilityIcon(ability) {
+    return `https://bcrypt.com.br/_next/image?url=%2Fatts%2F${ability}_icon.png&w=48&q=75`;
+  },
     verificarNFT() {
         this.inputProvided = true;
         const regex = /^https:\/\/opensea\.io\/assets\/matic\/(0xd8a06936506379dbBe6e2d8aB1D8C96426320854|0x2d5f4ba3e4a2d991bd72edbf78f607c174636618)\/\d+$/i;
@@ -89,13 +96,13 @@ export default {
         .then(response => response.json())
         .then(data => {
 
-            let ID, rarity, battery, image, stamina, bombPower, speed, charge, capacity, level;
+            let ID, rarity, battery, image, stamina, bombPower, speed, charge, capacity, level, abilities;
         
         if (nftNumber <= 5000) {
             ({ ID, rarity, charge, capacity } = data);
             image = `https://bcrypt.com.br/_next/image?url=%2Fbhouse%2F${data.image}House.png&w=128&q=75`;
         } else {
-            ({ ID, rarity, level, battery, image, stamina, bombPower, speed } = data);
+            ({ ID, rarity, level, battery, image, stamina, bombPower, speed, abilities  } = data);
             image = `https://bcrypt.com.br/_next/image?url=%2Fbhero%2F${data.image}&w=128&q=75`;
         }
 
@@ -142,6 +149,12 @@ export default {
                 bombPower: data.bombPower,
                 speed: data.speed,
                 level: data.level,
+                abilities: abilities.map(ability => {
+                    return {
+                        name: ability,
+                        icon: this.mapAbilityIcon(ability)
+                    };
+                })
             };
             }
         })
@@ -165,11 +178,10 @@ export default {
 </script>
 
 
-
-
-
-
 <style scoped>
+.abilities {
+  display: flex;
+}
 .mainInfo {
 align-self: center;
 align-content: center;
