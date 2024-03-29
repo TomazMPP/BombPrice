@@ -64,7 +64,7 @@ export default {
   methods: {
     verificarNFT() {
         this.inputProvided = true;
-        const regex = /^https:\/\/opensea\.io\/assets\/matic\/(0xd8a06936506379dbBe6e2d8aB1D8C96426320854|0x2d5f4ba3e4a2d991bd72edbf78f607c174636618)\/\d+$/;
+        const regex = /^https:\/\/opensea\.io\/assets\/matic\/(0xd8a06936506379dbBe6e2d8aB1D8C96426320854|0x2d5f4ba3e4a2d991bd72edbf78f607c174636618)\/\d+$/i;
         if (regex.test(this.openSeaLink)) {
             const nftNumber = this.openSeaLink.split('/').pop();
             if (!isNaN(nftNumber)) {
