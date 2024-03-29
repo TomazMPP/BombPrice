@@ -9,7 +9,7 @@
       </button>
       <button class="butao" :class="{ active: activeElement === 'iconCheck' }" @click="toggleActive('iconCheck')">
         <img src="https://imagepng.org/wp-content/uploads/2019/12/check-icone-scaled.png" alt="House Icon" class="typeSwitch">
-        Verified
+        My listings
       </button>
     </div>
   </div>

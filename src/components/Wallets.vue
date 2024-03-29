@@ -139,7 +139,6 @@ export default {
   max-width: 78px;
   height: 75px;
   padding: 5%;
-
 }
 .warning {
   color: black;
@@ -226,6 +225,7 @@ margin-right: 30px;
   border: 1px solid black;
   margin: 50px;
   margin-top: 20px;
+  margin-left: 22%;
 }
 /* styling of Input */
 .input {
@@ -306,6 +306,8 @@ input:not(:placeholder-shown) ~ .reset {
         align-items: center;
         
     }
+    .form {
+      margin-left: 10%;}
 
 }
 </style>
