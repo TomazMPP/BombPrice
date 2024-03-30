@@ -71,7 +71,7 @@ export default {
     async fetchData() {
       try {
         this.fetchingData = true;
-        const response = await fetch(`https://api.bcrypt.com.br/wallet/pol/${this.wallet}`);
+        const response = await fetch(`https://nft.bcrypt.com.br/wallet/pol/${this.wallet}`);
         if (response.status === 404) {
           this.notFoundError = true;
           return;
