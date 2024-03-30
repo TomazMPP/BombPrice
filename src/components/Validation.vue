@@ -91,7 +91,7 @@ export default {
         }
     },
     buscarDadosNFT(nftNumber) {
-        const url = nftNumber <= 5000 ? `https://api.bcrypt.com.br/bhouse/pol/${nftNumber}` : `https://api.bcrypt.com.br/bhero/pol/${nftNumber}`;
+        const url = nftNumber <= 5000 ? `https://nft.bcrypt.com.br/bhouse/pol/${nftNumber}` : `https://nft.bcrypt.com.br/bhero/pol/${nftNumber}`;
         fetch(url)
         .then(response => response.json())
         .then(data => {
