@@ -1,7 +1,10 @@
 <template>
   <div id="app">
     <inject />
+    <div class="textos">
     <h2 class="title">Developed by <a href="https://github.com/TomazMPP/BombPrice" class="linkGit">Tomaz</a></h2>
+    <h3 class="title projeto">Novo Projeto! Em PT-BR: <a href="https://wiki.bombtutorial.info/" class="linkGit">   BombTutorial - o guia brasileiro de BombCrypto</a></h3>
+  </div>
     <HeaderInicial @trocarComponente="trocarComponente" />
     <SwitchType @trocarComponente="trocarComponente" v-if="componenteAtual !== 'Donate' && componenteAtual !== 'Wallets' && componenteAtual !== 'Validation'" />
     <component :is="componenteAtual" />
@@ -47,20 +50,34 @@ export default {
 
 
 <style>
+.textos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
 .bomber {
   width: 250px;
   position:absolute;
   bottom: 0%;
   left: 2%;
 }
+
 .title {
   color: rgb(0, 0, 0);
   background-color: #52796F;
   border-radius: 5px;
   display: inline-block;
   padding: 10px;
+  margin: 0;
   padding-left: 20px;
   padding-right: 20px;
+}
+.projeto {
+  color: white;
+  background-color: rgb(109, 52, 52);
 }
 .linkGit {
   color: #CAD2C5;
