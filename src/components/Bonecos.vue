@@ -14,6 +14,9 @@ export default {
     this.fetchListings();
   },
   methods: {
+    mapAbilityIcon(ability) {
+    return `https://bcrypt.com.br/_next/image?url=%2Fatts%2F${ability}_icon.png&w=48&q=75`;
+  },
     getSquareClass(listing) {
         const formattedPrice = this.getPrice(listing);
 
@@ -35,7 +38,6 @@ export default {
         const data = await response.json();
         this.listings = data.listings;
         
-        // Iniciar o processo de busca do Bcrypt Data
         await this.fetchBcryptData();
       } catch (error) {
         console.error('Erro ao buscar listagens:', error);
@@ -43,7 +45,7 @@ export default {
     },
     async fetchBcryptDataOnClick() {
       
-    const fieldsToFetch = ['rarity', 'level', 'battery', 'image']; // Include 'image' field
+    const fieldsToFetch = ['rarity', 'level', 'image', 'abilities' ]; 
     const rarityMap = {
         'C': 'Common',
         'R': 'Rare',
@@ -53,49 +55,45 @@ export default {
         'SL': 'Super Legend'
     };
 
-    const batteryMap = {
-        '0': 'No',
-        '0.5': 'Yes'
-    };
-
     for (let i = 0; i < this.listings.length; i++) {
         const listing = this.listings[i];
         const identifier = this.getIdentifier(listing);
 
       
-      try {
-        this.showMain = true;
-            const response = await fetch(`https://api.bcrypt.com.br/bhero/pol/${identifier}`);
-            const data = await response.json();
+        try {
+    this.showMain = true;
+    const response = await fetch(`https://nft.bcrypt.com.br/bhero/pol/${identifier}`);
+    const data = await response.json();
 
-            if (data.hasOwnProperty('rarity') && rarityMap.hasOwnProperty(data.rarity)) {
-                data.rarity = rarityMap[data.rarity];
-            }
+    if (data.hasOwnProperty('rarity') && rarityMap.hasOwnProperty(data.rarity)) {
+        data.rarity = rarityMap[data.rarity];
+    }
 
-            if (data.hasOwnProperty('battery') && batteryMap.hasOwnProperty(data.battery.toString())) {
-                data.battery = batteryMap[data.battery.toString()];
-            }
-
-            // Include image data in filteredData
-            const filteredData = {};
-            fieldsToFetch.forEach(field => {
-                if (data.hasOwnProperty(field)) {
-                    filteredData[field] = data[field];
-                }
-            });
-
-            // Update the image URL to a complete URL if needed
-            if (filteredData.hasOwnProperty('image') && !filteredData.image.startsWith('http')) {
-                filteredData.image = `https://bcrypt.com.br/_next/image?url=%2Fbhero%2F${filteredData.image}&w=128&q=75`; // Replace example.com with actual base URL
-            }
-
-            // Update the listings with filtered Bcrypt data
-            this.listings[i].bcryptData = filteredData;
-        } catch (error) {
-            console.error('Error fetching Bcrypt data:', error);
+    const filteredData = {};
+    fieldsToFetch.forEach(field => {
+        if (data.hasOwnProperty(field)) {
+            filteredData[field] = data[field];
         }
+    });
 
-        // Wait for 1 second before making the next request
+    if (filteredData.hasOwnProperty('image') && !filteredData.image.startsWith('http')) {
+        filteredData.image = `https://bcrypt.com.br/_next/image?url=%2Fbhero%2F${filteredData.image}&w=128&q=75`;
+    }
+
+    if (data.hasOwnProperty('abilities')) {
+        this.listings[i].bcryptData.abilities = filteredData.abilities.map(ability => this.mapAbilityIcon(ability));
+
+    }
+
+    if (!this.listings[i].bcryptData) {
+        this.listings[i].bcryptData = {};
+    }
+
+    this.listings[i].bcryptData = filteredData;
+} catch (error) {
+    console.error('Error fetching Bcrypt data:', error);
+}
+
         await this.delay(1000);
     }
 },
@@ -138,12 +136,20 @@ To get the heroes data, you must click the button above</p>
                     <template v-if="key !== 'image'">
                         <strong>{{ key }}:</strong> {{ value }}
                     </template> 
+                    <template v-else-if="key === 'abilities'">
+                <strong>{{ key }}:</strong>
+                <div class="abilities">
+                  <img v-for="(ability, index) in value" :key="index" v-bind:src="ability" :alt="ability">
+                </div>
+            </template>
                 </li>
+                
             </ul>
+            
+</div>
             <p><a :href="'https://opensea.io/assets/matic/0xd8a06936506379dbbe6e2d8ab1d8c96426320854/' + getIdentifier(listing)" target="_blank" class="linkOpen"><u>OpenSea</u></a></p>
         </div>
     </div>
-</div>
 
   </template>
   
