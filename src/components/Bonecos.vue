@@ -189,11 +189,13 @@ ul, li {
 }
 .quadradoLendario {
   background-color: rgb(161, 97, 12);
+  }
 .quadradoSRaro {
   background-color: #735874 !important;
 }
 .quadradoRaro {
   background-color: #2c852c !important;
+}
 .quadradoSuperLenda {
   background-color: blue;
 }
@@ -206,6 +208,7 @@ ul, li {
 }
 .profit {
     background-color: green;
+}
 .quadradoSuperLenda {
   background-color: #ff0759 !important;
   color: white !important;
