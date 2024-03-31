@@ -74,9 +74,13 @@ export default {
      const regex = /^https:\/\/opensea\.io\/assets\/matic\/(0xd8a06936506379dbBe6e2d8aB1D8C96426320854|0x2d5f4ba3e4a2d991bd72edbf78f607c174636618)\/\d+\/?$/i;
      
         if (regex.test(this.openSeaLink)) {
-          const parts = this.openSeaLink.split('/');
-const nftNumber = parts[parts.length - 1].replace('/', '');
-          
+          let nftNumber = this.openSeaLink.match(/\/(\d+)\/?$/);
+if (nftNumber && nftNumber[1]) {
+    nftNumber = nftNumber[1];
+} else {
+    nftNumber = this.openSeaLink.split('/').filter(Boolean).pop();
+}
+          console.log(nftNumber)
             if (nftNumber.endsWith('/')) {
               console.log(nftNumber)
             nftNumber = nftNumber.slice(0, -1);
@@ -99,6 +103,7 @@ const nftNumber = parts[parts.length - 1].replace('/', '');
         }
     },
     buscarDadosNFT(nftNumber) {
+      console.log(nftNumber)
         const url = nftNumber <= 5000 ? `https://nft.bcrypt.com.br/bhouse/pol/${nftNumber}` : `https://nft.bcrypt.com.br/bhero/pol/${nftNumber}`;
         fetch(url)
         .then(response => response.json())
