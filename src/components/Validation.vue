@@ -71,7 +71,7 @@ export default {
   },
     verificarNFT() {
         this.inputProvided = true;
-        const regex = /^https:\/\/opensea\.io\/assets\/matic\/(0xd8a06936506379dbBe6e2d8aB1D8C96426320854|0x2d5f4ba3e4a2d991bd72edbf78f607c174636618)\/\d+$/i;
+     const regex = /^https:\/\/opensea\.io\/assets\/matic\/(0xd8a06936506379dbBe6e2d8aB1D8C96426320854|0x2d5f4ba3e4a2d991bd72edbf78f607c174636618)\/\d+\/?$/i;
         if (regex.test(this.openSeaLink)) {
             const nftNumber = this.openSeaLink.split('/').pop();
             if (!isNaN(nftNumber)) {
@@ -125,12 +125,9 @@ export default {
                 '5': 'Super Villa'
             };
 
-            // Tratamento especial para a bateria
             const batteryStatus = battery === 0 ? 'No' : battery === 0.5 ? 'Yes' : battery;
 
-            // Atualizar o estado com os dados mapeados
             if (nftNumber <= 5000) {
-            // Tratar dados da casa
             this.nftData = {
                 ID: data.id,
                 rarity: houseRarityMap[data.rarity],
@@ -139,7 +136,6 @@ export default {
                 image,
             };
         } else {
-            // Tratar dados do herói
             this.nftData = {
                 ID: data.id,
                 rarity: rarityMap[data.rarity],
