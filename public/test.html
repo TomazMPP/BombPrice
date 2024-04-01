@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Página</title>
+</head>
+<body>
+    <!-- Sua textarea para inserir os IDs -->
+    <textarea id="idsInput" rows="10" cols="50"></textarea>
+    <button onclick="runScript()">Rodar Script</button>
+
+    <!-- Resultados -->
+    <div id="results">
+        <h2>Resultados:</h2>
+        <p id="commonResult"></p>
+        <p id="rareResult"></p>
+        <p id="superRareResult"></p>
+        <p id="epicResult"></p>
+        <p id="legendResult"></p>
+        <p id="superLegendResult"></p>
+    </div>
+
+    <script>
+        let common = [];
+        let rare = [];
+        let superRare = [];
+        let epic = [];
+        let legend = [];
+        let superLegend = [];
+        
+        async function makeRequests(ids) {
+            for (let i = 0; i < ids.length; i++) {
+                try {
+                    const response = await fetch(`https://nft.bcrypt.com.br/bhero/pol/${ids[i]}`);
+                    const data = await response.json();
+                    switch (data.rarity) {
+                        case "C":
+                            common.push(data.ID);
+                            break;
+                        case "R":
+                            rare.push(data.ID);
+                            break;
+                        case "SR":
+                            superRare.push(data.ID);
+                            break;
+                        case "E":
+                            epic.push(data.ID);
+                            break;
+                        case "L":
+                            legend.push(data.ID);
+                            break;
+                        case "SL":
+                            superLegend.push(data.ID);
+                            console.log("Super:", ids[i]);
+                            break;
+                        default:
+                            break;
+                    }
+                } catch (error) {
+                    console.error('Erro ao fazer requisição:', error);
+                }
+                await delay(1000); // Aguarda 1 segundo antes da próxima requisição
+            }
+            console.log("Concluído!");
+            document.getElementById('commonResult').innerText = "Common: " + common.join(", ");
+            document.getElementById('rareResult').innerText = "Rare: " + rare.join(", ");
+            document.getElementById('superRareResult').innerText = "SuperRare: " + superRare.join(", ");
+            document.getElementById('epicResult').innerText = "Epic: " + epic.join(", ");
+            document.getElementById('legendResult').innerText = "Legend: " + legend.join(", ");
+            document.getElementById('superLegendResult').innerText = "SuperLegend: " + superLegend.join(", ");
+        }
+
+        function delay(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        function runScript() {
+            let inputText = document.getElementById('idsInput').value;
+            let ids = inputText.split('\n').map(id => id.trim());
+            makeRequests(ids);
+        }
+    </script>
+</body>
+</html>
