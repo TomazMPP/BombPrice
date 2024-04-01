@@ -219,13 +219,13 @@ ul, li {
 }
 @media screen and (max-width: 1200px) {
     .main {
-        grid-template-columns: repeat(3, minmax(250px, 1fr)); /* 3 itens por linha */
+        grid-template-columns: repeat(3, minmax(250px, 1fr)); 
        
     }
 }
 @media screen and (max-width: 800px) {
     .main {
-        grid-template-columns: repeat(2, minmax(300px, 1fr)); /* 2 itens por linha */
+        grid-template-columns: repeat(2, minmax(300px, 1fr)); 
         margin: 0%;
         align-items: center;
         
@@ -234,7 +234,7 @@ ul, li {
 @media screen and (max-width: 600px) {
     .main {
       margin: 0;
-        grid-template-columns: repeat(1, minmax(400px, 1fr)); /* 1 item por linha */
+        grid-template-columns: repeat(1, minmax(400px, 1fr)); 
     }
 }
 </style>

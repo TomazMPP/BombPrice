@@ -22,7 +22,7 @@ export default {
       }
     },
     async fetchBcryptDataOnClick() {
-  const fieldsToFetch = ['size', 'charge', 'capacity', 'image', 'type']; // Adicionando 'type' como campo
+  const fieldsToFetch = ['size', 'charge', 'capacity', 'image', 'type'];
 
   for (let i = 0; i < this.listings.length; i++) {
     const listing = this.listings[i];
@@ -30,10 +30,9 @@ export default {
 
     try {
       this.showMain = true;
-      const response = await fetch(`https://api.bcrypt.com.br/bhouse/pol/${identifier}`);
+      const response = await fetch(`https://nft.bcrypt.com.br/bhouse/pol/${identifier}`);
       const data = await response.json();
 
-      // Incluir dados da imagem em filteredData
       const filteredData = {};
       fieldsToFetch.forEach(field => {
         if (data.hasOwnProperty(field)) {
@@ -41,18 +40,15 @@ export default {
         }
       });
 
-      // Atualizar a URL da imagem para uma URL completa, se necessário
       if (filteredData.hasOwnProperty('image') && !filteredData.image.startsWith('http')) {
-        filteredData.image = `https://bcrypt.com.br/_next/image?url=%2Fbhouse%2F${filteredData.image}House.png&w=128&q=75`; // Substitua example.com pela URL base real
+        filteredData.image = `https://bcrypt.com.br/_next/image?url=%2Fbhouse%2F${filteredData.image}House.png&w=128&q=75`; 
       }
 
-      // Atualizar as listagens com os dados filtrados do Bcrypt
       this.listings[i].bcryptData = filteredData;
     } catch (error) {
       console.error('Erro ao buscar dados do Bcrypt:', error);
     }
 
-    // Aguardar 1 segundo antes de fazer a próxima solicitação
     await this.delay(1000);
   }
 },
@@ -64,7 +60,7 @@ export default {
     },
     getPrice(listing) {
       const { currency, value } = listing.price.current;
-      let formattedPrice = parseFloat(value) / Math.pow(10, 18); // Convertendo para Matic
+      let formattedPrice = parseFloat(value) / Math.pow(10, 18); 
       return `${formattedPrice} ${currency}`;
     },
   },
@@ -86,7 +82,7 @@ To get the houses data, you must click the button above</p>
         <img :src="listing.bcryptData && listing.bcryptData.image" alt="Loading info..." class="imageHero" style="display: block; width: 100%;">
         <div v-if="listing.bcryptData">
             <p><strong>ID:</strong> {{ getIdentifier(listing) }}</p>
-<p v-if="listing.bcryptData && listing.bcryptData.type"><strong>Type:</strong> {{ listing.bcryptData.type }}</p> <!-- Adicionando condicional para exibir apenas se o campo "type" existir -->
+<p v-if="listing.bcryptData && listing.bcryptData.type"><strong>Type:</strong> {{ listing.bcryptData.type }}</p> 
 <p><strong>Preço:</strong> {{ getPrice(listing) }}</p>
 <ul>
     <li v-for="(value, key) in listing.bcryptData" :key="key">
