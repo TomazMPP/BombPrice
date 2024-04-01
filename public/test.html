@@ -76,10 +76,10 @@
         }
 
         function runScript() {
-            let inputText = document.getElementById('idsInput').value;
-            let ids = inputText.split('\n').map(id => id.trim());
-            makeRequests(ids);
-        }
+    let inputText = document.getElementById('idsInput').value;
+    let ids = inputText.split(',').map(id => id.trim());
+    makeRequests(ids);
+}
     </script>
 </body>
 </html>
