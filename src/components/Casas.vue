@@ -83,7 +83,7 @@ To get the houses data, you must click the button above</p>
         <div v-if="listing.bcryptData">
             <p><strong>ID:</strong> {{ getIdentifier(listing) }}</p>
 <p v-if="listing.bcryptData && listing.bcryptData.type"><strong>Type:</strong> {{ listing.bcryptData.type }}</p> 
-<p><strong>Preço:</strong> {{ getPrice(listing) }}</p>
+<p><strong>Price:</strong> {{ getPrice(listing) }}</p>
 <ul>
     <li v-for="(value, key) in listing.bcryptData" :key="key">
         <template v-if="key !== 'image' && key !== 'type'">
