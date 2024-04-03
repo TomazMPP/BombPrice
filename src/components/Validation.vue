@@ -247,6 +247,7 @@ align-content: center;
     justify-content: center;
     color: black;
     flex-direction: column;
+    border: 2px solid black;
 }
 
 .form button {
@@ -304,7 +305,7 @@ align-content: center;
   border-radius: 1px;
   transition: transform var(--timing) ease;
 }
-/* Hover on Input */
+
 .form:focus-within {
   border-radius: var(--after-border-radius);
 }
@@ -312,24 +313,23 @@ align-content: center;
 input:focus {
   outline: none;
 }
-/* here is code of animated border */
+
 .form:focus-within:before {
   transform: scale(1);
 }
-/* styling of close button */
-/* == you can click the close button to remove text == */
+
 .reset {
   border: none;
   background: none;
   opacity: 0;
   visibility: hidden;
 }
-/* close button shown when typing */
+
 input:not(:placeholder-shown) ~ .reset {
   opacity: 1;
   visibility: visible;
 }
-/* sizing svg icons */
+
 .form svg {
   width: 17px;
   margin-top: 3px;
@@ -346,14 +346,14 @@ input:not(:placeholder-shown) ~ .reset {
 
 @media screen and (max-width: 1200px) {
     .heroisClas {
-        grid-template-columns: repeat(2, minmax(250px, 1fr)); /* 3 itens por linha */
+        grid-template-columns: repeat(2, minmax(250px, 1fr)); 
        
     }
 }
 
 @media screen and (max-width: 800px) {
     .heroisClas {
-        grid-template-columns: repeat(1, minmax(300px, 1fr)); /* 2 itens por linha */
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
         margin: 0%;
         align-items: center;
         

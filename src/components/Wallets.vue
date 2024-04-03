@@ -204,6 +204,7 @@ margin-right: 30px;
     justify-content: center;
     color: black;
     flex-direction: column;
+    border: 2px solid black;
 }
 
 .form button {
