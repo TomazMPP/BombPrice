@@ -1,7 +1,5 @@
 <template>
   <div class="main">
-    <p class="warning" v-if="!fetchingData">
-This feature is not yet 100% functional.<br>For a more accurate check, use <a href="https://bcrypt.com.br/pol/wallets">Bcrypt.</a></p>
     <form class="form" @submit.prevent="fetchData">
       <button type="submit">
         <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
