@@ -194,7 +194,7 @@ align-self: center;
 align-content: center;
 }
 .warningHint {
-    color: rgb(27, 25, 145);
+    color: #0B2545;
     margin-top: 20px;
 }
 .imgThing {
@@ -240,7 +240,7 @@ align-content: center;
 }
 
 .main {
-  background-color: #CAD2C5;
+  background-color: #8DA9C4;
   border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     display: flex;

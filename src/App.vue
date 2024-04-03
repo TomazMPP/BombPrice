@@ -3,7 +3,7 @@
     <inject />
     <div class="textos">
     <h2 class="title">Developed by <a href="https://github.com/TomazMPP/BombPrice" class="linkGit">Tomaz</a></h2>
-    <h3 class="title projeto">Novo Projeto! Em PT-BR: <a href="https://wiki.bombtutorial.info/" class="linkGit">   BombTutorial - o guia brasileiro de BombCrypto</a></h3>
+    <h3 class="title projeto">Check <a href="https://bombtutorial.info/" class="linkGit secondLink">BombTutorial HUB</a> to see all my projects</h3>
   </div>
     <HeaderInicial @trocarComponente="trocarComponente" />
     <SwitchType @trocarComponente="trocarComponente" v-if="componenteAtual !== 'Donate' && componenteAtual !== 'Wallets' && componenteAtual !== 'Validation'" />
@@ -66,28 +66,38 @@ export default {
 }
 
 .title {
-  color: rgb(0, 0, 0);
-  background-color: #52796F;
+  color: #EEF4ED;
+  background-color: #13315C;
   border-radius: 5px;
   display: inline-block;
   padding: 10px;
   margin: 0;
   padding-left: 20px;
   padding-right: 20px;
+  border: 2px solid black;
 }
 .projeto {
-  color: white;
-  background-color: rgb(109, 52, 52);
+  color: black;
+  background-color: #0ed869;
+  
 }
 .linkGit {
-  color: #CAD2C5;
+  color: #5d9c36;
 }
 .linkGit:hover {
-  color: #2F3E46;
+  color: #8DA9C4;
+}
+.secondLink {
+  color: #0B2545;
+  font-weight: 700;
+}
+.secondLink:hover {
+  color: #134074;
 }
 #app {
   justify-content: center;
   min-width: 800px;
+  
 }
 
 @media screen and (max-width: 1500px) {

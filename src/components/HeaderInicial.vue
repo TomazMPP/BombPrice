@@ -37,12 +37,12 @@ export default {
 }
 
 .wallet, .validation {
-  color: #CAD2C5;
+  color: #EEF4ED;
   cursor: pointer;
   padding-top: 5%;
 }
 nav {
-  background-color:#2F3E46;
+  background-color:#0B2545;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   padding: 5px 5%;
@@ -52,11 +52,12 @@ nav {
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   overflow:hidden;
 gap: 210px;
+border: 2px solid black;
 }
 
 nav .logo h1 {
   font-size: 1.3rem;
-  color: #CAD2C5;
+  color: #EEF4ED;
 }
 
 .right {
@@ -65,9 +66,9 @@ nav .logo h1 {
 }
 
 .donate {
-  background-color: #52796F;
+  background-color: #EEF4ED;
   border-radius: 15px;
-  color: white;
+color: black;
   cursor: pointer;
   padding: 10px;
   margin: 3% 0%;
@@ -80,7 +81,7 @@ nav .logo h1 {
 .home {
   padding: 5% 0%;
   cursor: pointer;
-  color: #CAD2C5;
+  color: #EEF4ED;
 }
 
 .menubar {

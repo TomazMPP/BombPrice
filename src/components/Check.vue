@@ -1,4 +1,5 @@
 <template>
+  <div class="tudo">
  <p class="warning">
 This page showcases the heroes available for purchase from the site owner,<br>always offered at competitive prices and ensuring a safe transaction.</p>
     <div class="main">
@@ -11,8 +12,15 @@ This page showcases the heroes available for purchase from the site owner,<br>al
     <a class="buyButton" href="https://opensea.io/assets/matic/0x2d5f4ba3e4a2d991bd72edbf78f607c174636618/121" target="_blank">BUY NOW! (OPENSEA)</a>
       </div>
     </div>
+  </div>
   </template>
   <style scoped> 
+   .tudo {
+    border: 2px solid black;
+    border-top: 0px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
   .casa {
     background-color: #354F52 !important;
 
@@ -35,7 +43,7 @@ This page showcases the heroes available for purchase from the site owner,<br>al
   right: 30px;
 }
 .warning {
-    background-color: #52796F;
+    background-color: #8DA9C4;
     padding-top: 0px;
     margin: 0;
     color: white;
@@ -56,7 +64,7 @@ This page showcases the heroes available for purchase from the site owner,<br>al
   grid-auto-flow: dense;
   gap: 50px;
 padding: 50px;
-  background-color: #52796F;
+  background-color: #8DA9C4;
   border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     justify-content: center;

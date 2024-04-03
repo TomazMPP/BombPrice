@@ -197,7 +197,7 @@ margin-right: 30px;
 }
 .main {
 
-  background-color: #CAD2C5;
+  background-color: #8DA9C4;
   border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     display: flex;

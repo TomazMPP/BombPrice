@@ -48,7 +48,7 @@ export default {
   
   <style scoped>
   .butao {
-    background-color: #CAD2C5;
+    background-color: #4d7eb6;
     padding: 0;
     cursor: pointer;
     border: 2px solid black;
@@ -56,17 +56,20 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #2F3E46;
+    color: #EEF4ED;
   }
   
   .active {
-    background-color: #84A98C;
+    background-color: #13315C;
+    color: #EEF4ED;
   }
   .type {
-    background-color: #52796F;
+    background-color: #8DA9C4;
     padding: 2%;
     display: flex;
     justify-content: center;
+    border: 2px solid black;
+    border-bottom: 0px;
   }
   .test {
     display: flex;

@@ -103,6 +103,7 @@ export default {
 };
 </script>
 <template>
+  <div class="tudo">
  <div :class="{ 'botaoFetch': true, 'removeBorderRadius': showMain }">
     
     <button class="bta" @click="fetchBcryptDataOnClick">Get Heroes</button>
@@ -127,26 +128,36 @@ To get the heroes data, you must click the button above</p>
         </div>
     </div>
 </div>
+</div>
   </template>
   
   
   <style scoped> 
+
+  .tudo {
+    border: 2px solid black;
+    border-top: 0px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+
+  }
   .bta {
-    background-color: #2F3E46;
+    background-color: #13315C;
   }
   .removeBorderRadius {
     border-bottom-right-radius: 0px !important;
     border-bottom-left-radius: 0px !important;
   }
     .warning {
-    background-color: #52796F;
+    background-color: #8DA9C4;
     padding-top: 0px;
     margin: 0;
     margin-top: 15px;
-    color: white;
+    color: black;
   }
   .botaoFetch {
-    background-color: #52796F;
+    background-color: #8DA9C4;
     padding-top: 50px;
     padding: 50px;
     border-bottom-right-radius: 10px;
@@ -164,14 +175,14 @@ To get the heroes data, you must click the button above</p>
   grid-auto-flow: dense;
   gap: 50px;
 padding: 50px;
-  background-color: #52796F;
+  background-color: #8DA9C4;
   border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     justify-content: center;
 }
 .quadradoInfo {
-  background-color: #b5c6da;
-  color: rgb(0, 0, 0);
+  background-color: #13315C;
+  color: white;
   padding: 15px; 
   border-radius: 10px;
   text-align: left;

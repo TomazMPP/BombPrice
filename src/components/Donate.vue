@@ -38,7 +38,7 @@ export default {
 
 .main {
     color: black;
-  background-color: #dae4d5;
+  background-color: #8DA9C4;
   display: flex;
   justify-content: space-between;
   gap: 100px;
