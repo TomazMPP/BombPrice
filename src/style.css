@@ -33,7 +33,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-image: url('https://en.cryptory.net/wp-content/uploads/2022/03/cryptory-bomb-crypto-2.jpg');
+  background-image: url('../background.png');
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
