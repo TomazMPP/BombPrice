@@ -34,7 +34,6 @@ export default {
         const data = await response.json();
         this.listings = data.listings;
         
-        // Iniciar o processo de busca do Bcrypt Data
         await this.fetchBcryptData();
       } catch (error) {
         console.error('Erro ao buscar listagens:', error);
@@ -42,7 +41,7 @@ export default {
     },
     async fetchBcryptDataOnClick() {
       
-    const fieldsToFetch = ['rarity', 'level', 'battery', 'image']; // Include 'image' field
+    const fieldsToFetch = ['rarity', 'level', 'battery', 'image'];
     const rarityMap = {
         'C': 'Common',
         'R': 'Rare',
@@ -82,7 +81,7 @@ export default {
         } catch (error) {
             console.error('Error fetching Bcrypt data:', error);
         }
-        await this.delay(1000);
+        await this.delay(1500);
     }
 },
     delay(ms) {
