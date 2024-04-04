@@ -49,7 +49,7 @@ export default {
       console.error('Erro ao buscar dados do Bcrypt:', error);
     }
 
-    await this.delay(1000);
+    await this.delay(1500);
   }
 },
     delay(ms) {
