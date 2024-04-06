@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url(./reset.css);
+
+html {
+    background-image: url(https://game.bombcrypto.io/static/media/background_update.755e06f6.png);
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+    color: black;
+}
+
+body {
+    align-items: center;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 30px;
+    margin: 5% 0%;
+    color: #134074;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 5%;
+}
+
+.mainInfo {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.quadradoSRaro {
+  padding: 15px; 
+  border-radius: 10px;
+  background-color: #735874 !important;
+}
+.quadradoRaro {
+  padding: 15px; 
+  border-radius: 10px;
+  background-color: #2c852c !important;
+
+}
+.quadradoEpico {
+  padding: 15px; 
+  border-radius: 10px;
+  background-color: #8b2a8f !important;
+  color: white !important;
+
+}
+.quadradoLendario {
+  padding: 15px; 
+  border-radius: 10px;
+  background-color: rgb(161, 97, 12) !important;
+}
+
+.imgThing {
+  max-width: 78px;
+  height: 75px;
+  padding: 5%;
+}
+.quadradoSuperLenda {
+  padding: 15px; 
+  border-radius: 10px;
+  background-color: #ff0759 !important;
+  color: white !important;
+}
+
+strong {
+  font-weight: 700;
+}
+ .outputData {
+    background-color: #134074;
+    color: #EEF4ED;
+    padding: 5%;
+    border-radius: 20px;
+    border: 5px solid #0B2545;
+    align-items: center;
+    text-align: center;
+}
+
+.inputData {
+    display: flex;
+    flex-direction: column;
+    background-color: #8DA9C4;
+    color: #134074;
+    padding: 2% 5%;
+    border-radius: 20px;
+    border: 5px solid #0B2545;
+    align-items: center;
+    text-align: center;
+}
+
+.input {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: black;
+    border: 2px solid #0B2545;
+    border-radius: 10px;
+    padding: 10px 25px;
+    background: transparent;
+    max-width: 190px;
+   }
+   
+   .input:active {
+    box-shadow: 2px 2px 15px #134074 inset;
+   }
+   .score {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   }
+
+   .cssbuttons-io {
+    position: relative;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    border-radius: 0.8em;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(to right, #0B2545, #134074);
+    color: ghostwhite;
+    overflow: hidden;
+  }
+  
+  .cssbuttons-io svg {
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 0.5em;
+  }
+  
+  .cssbuttons-io span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8em 1.2em 0.8em 1.05em;
+  }
+  
+  .cssbuttons-io::before,
+  .cssbuttons-io::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  
+  .cssbuttons-io::before {
+    content: "";
+    background: #0B2545;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+  }
+  
+  .cssbuttons-io:hover::before {
+    transform: translate3d(100%, 0, 0);
+  }
+  
+  .cssbuttons-io:active {
+    transform: scale(0.95);
+  }
+  
