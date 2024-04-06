@@ -3,7 +3,7 @@
     "rewrites": [
       {
         "source": "/score",
-        "destination": "/BombScore/index.html"
+        "destination": "public/BombScore/index.html"
       }
     ]
   }
