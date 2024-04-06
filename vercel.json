@@ -1,0 +1,9 @@
+{
+    "cleanUrls": true,
+    "rewrites": [
+      {
+        "source": "/score",
+        "destination": "/BombScore/index.html"
+      }
+    ]
+  }
