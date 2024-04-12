@@ -1,7 +1,7 @@
 <template>
   <nav>
     <div class="logo">
-      <img class="logoImg" src="https://s2.coinmarketcap.com/static/img/coins/200x200/12252.png" alt="Imagem do token bcoin"><h1 @click="goTo('Bonecos')">BombPrice</h1>
+      <img class="logoImg" src="https://s2.coinmarketcap.com/static/img/coins/200x200/12252.png" alt="Imagem do token bcoin"><h1 @click="goTo('Check')">BombPrice</h1>
     </div>
     <div class="right">
       <a class="validation" @click="goTo('Validation')"><img class="menuImg" src="https://imagepng.org/wp-content/uploads/2019/12/check-icone-scaled.png" alt="Drawing of a wallet">Validation</a>

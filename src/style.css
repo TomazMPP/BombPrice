@@ -27,6 +27,7 @@ a:hover {
 html {
   overflow-x: hidden;
 }
+
 body {
   margin: 0;
   display: flex;
@@ -37,7 +38,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
-
 }
 
 h1 {
