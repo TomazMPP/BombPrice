@@ -22,7 +22,6 @@ import Casas from './components/Casas.vue'
 import Check from './components/Check.vue'
 import Wallets from './components/Wallets.vue'
 import Validation from './components/Validation.vue'
-
 export default {
   components: {
     HeaderInicial,
@@ -37,7 +36,12 @@ export default {
   },
   data() {
     return {
-      componenteAtual: 'Bonecos'
+      componenteAtual: 'Check'
+    }
+  },
+  mounted() {
+    if (window.location.hash === '#listings') {
+      this.trocarComponente('Check');
     }
   },
   methods: {
