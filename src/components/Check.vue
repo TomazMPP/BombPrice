@@ -54,22 +54,6 @@ This page showcases the heroes available for purchase from the site owner,<br>al
     <a class="buyButton" href="https://opensea.io/assets/matic/0xd8a06936506379dbbe6e2d8ab1d8c96426320854/583643" target="_blank">BUY NOW! (OPENSEA)</a>
       </div>
       <div class="lendario quadradoInfo">
-       <img src="https://bcrypt.com.br/_next/image?url=%2Fbhero%2Fknight_red_icon.png&w=128&q=75" alt="Boneco do BombCrypto" style="width: 65px; padding: 2%;">  
-       <p><strong>ID: </strong>3154994</p>
-       <p><strong>Rarity: </strong>90% Perfect Legend</p>
-       <p><strong>Price: </strong>19 MATIC</p>
-       <p class="abilit"><strong>P: 💥</strong> <u class="greenun">15</u> | <strong>ST: <img src="https://bcrypt.com.br/_next/image?url=%2Fskills%2Fskill5.webp&w=32&q=75" alt="Speed Skill" style="width: 13px;"> </strong> <u class="yelun">14</u> | <strong>SP: <img src="https://bcrypt.com.br/_next/image?url=%2Fskills%2Fskill1.webp&w=32&q=75" alt="Speed Skill" style="width: 15px;"></strong> <u class="yelun">13</u></p>
-       <div class="skills">
-        <img src="https://bcrypt.com.br/_next/image?url=%2Fatts%2Fjail_breaker_icon.png&w=48&q=75" alt="Jail Breaker Skill">
-        <img src="https://bcrypt.com.br/_next/image?url=%2Fatts%2Fpierce_block_icon.png&w=48&q=75" alt="Pierce Block Skill">
-        <img src="https://bcrypt.com.br/_next/image?url=%2Fatts%2Fsave_battery_icon.png&w=48&q=75" alt="Save Battery Skill">
-        <img src="https://bcrypt.com.br/_next/image?url=%2Fatts%2Ffast_charge_icon.png&w=48&q=75" alt="Battery Skill">
-        <img src="https://bcrypt.com.br/_next/image?url=%2Fatts%2Fblock_pass_icon.png&w=48&q=75" alt="Block Pass Skill">
-    <img src="https://bcrypt.com.br/_next/image?url=%2Fatts%2Fshield_icon.png&w=48&q=75" alt="Shield Skill">
-  </div>
-    <a class="buyButton" href="https://opensea.io/assets/matic/0xd8a06936506379dbbe6e2d8ab1d8c96426320854/3154994" target="_blank">BUY NOW! (OPENSEA)</a>
-      </div>
-      <div class="lendario quadradoInfo">
        <img src="https://bcrypt.com.br/_next/image?url=%2Fbhero%2Fninja_icon.png&w=128&q=75" alt="Boneco do BombCrypto" style="width: 75px; padding: 5%;">  
        <p><strong>ID: </strong>734813</p>
        <p><strong>Rarity: </strong>Legend</p>
