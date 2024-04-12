@@ -1,16 +1,19 @@
 <template>
   <div class="type">
     <div class="test">
+      <button class="butao" :class="{ active: activeElement === 'iconValidation' }" @click="toggleActive('iconValidation')">
+        <img src="https://imagepng.org/wp-content/uploads/2019/12/check-icone-scaled.png" alt="Pepe Hero Icon" class="typeSwitch"> Validation
+      </button>
       <button class="butao" :class="{ active: activeElement === 'iconCheck' }" @click="toggleActive('iconCheck')">
         <img src="https://cdn-icons-png.flaticon.com/512/3967/3967122.png" alt="House Icon" class="typeSwitch">
         My listings
       </button>
-      <button class="butao" :class="{ active: activeElement === 'IconHero' }" @click="toggleActive('IconHero')">
+     <!-- <button class="butao" :class="{ active: activeElement === 'IconHero' }" @click="toggleActive('IconHero')">
         <img src="https://i.imgur.com/j83LEI3.png" alt="Pepe Hero Icon" class="typeSwitch"> Heroes
       </button>
       <button class="butao" :class="{ active: activeElement === 'iconHouse' }" @click="toggleActive('iconHouse')">
         <img src="https://i.imgur.com/sSU7vOJ.png" alt="House Icon" class="typeSwitch casa"> Houses
-      </button>
+      </button> -->
       
     </div>
   </div>
@@ -28,6 +31,9 @@ export default {
   this.activeElement = element;
   let componente;
   switch (element) {
+    case 'iconValidation':
+      componente = 'Validation';
+      break;
     case 'IconHero':
       componente = 'Bonecos';
       break;
@@ -38,7 +44,7 @@ export default {
       componente = 'Check';
       break;
     default:
-      componente = 'Bonecos'; // Valor padrão caso nenhum corresponda
+      componente = 'Validation';
   }
   this.$emit('trocarComponente', componente);
 }
@@ -79,7 +85,8 @@ export default {
     width: fit-content;
     margin-top: 2%;
     flex-wrap: wrap;
-width: 80%;
+    width: 50%;
+
   }
   
   .typeSwitch {

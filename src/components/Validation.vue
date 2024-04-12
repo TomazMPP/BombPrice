@@ -2,7 +2,6 @@
     <div class="main">
         <p class="warning">Please paste the OpenSea link to verify the authenticity of the NFT. <br>
         </p>
-        <p class="warningHint"><strong>* Warning:</strong> Currently, this only works if you paste the specific NFT link,<br>in the future I will add the possibility of pasting the link to a collection.</p>
   
         <form class="form" @submit.prevent="verificarNFT">
             <button type="submit">
@@ -50,7 +49,8 @@
 
 <div v-else-if="validNFT && inputProvided">Fetching NFT data...</div>
 </div>
-        <p>Feature suggested by <strong>kardongbalasubas</strong> on the <a href="https://discord.com/invite/bombcryptoofficial" target="_blank">Official Discord.</a></p>
+<p>Feature suggested by <strong>kardongbalasubas</strong> on the <a href="https://discord.com/invite/bombcryptoofficial" target="_blank">Official Discord.</a><br>
+  Want to know how good a hero is? Get your hero score using <a href="https://www.bombscore.site/">BombScore!</a></p>
     </div>
 </template>
 
@@ -103,7 +103,7 @@ if (nftNumber && nftNumber[1]) {
     },
     buscarDadosNFT(nftNumber) {
       console.log(nftNumber)
-        const url = nftNumber <= 5000 ? `https://nft.bcrypt.com.br/bhouse/pol/${nftNumber}` : `https://nft.bcrypt.com.br/bhero/pol/${nftNumber}`;
+        const url = nftNumber <= 5000 ? `https://nft.bcrypt.com.br/bhouse/pol/${nftNumber}` : `https://server-bs.vercel.app/hero/${nftNumber}`;
         fetch(url)
         .then(response => response.json())
         .then(data => {
@@ -248,6 +248,7 @@ align-content: center;
     color: black;
     flex-direction: column;
     border: 2px solid black;
+    border-top: 0px;
 }
 
 .form button {

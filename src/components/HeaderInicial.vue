@@ -4,9 +4,9 @@
       <img class="logoImg" src="https://s2.coinmarketcap.com/static/img/coins/200x200/12252.png" alt="Imagem do token bcoin"><h1 @click="goTo('Check')">BombPrice</h1>
     </div>
     <div class="right">
-      <a class="validation" @click="goTo('Validation')"><img class="menuImg" src="https://imagepng.org/wp-content/uploads/2019/12/check-icone-scaled.png" alt="Drawing of a wallet">Validation</a>
+    <!--  <a class="validation" @click="goTo('Validation')"><img class="menuImg" src="https://imagepng.org/wp-content/uploads/2019/12/check-icone-scaled.png" alt="Drawing of a wallet">Validation</a>
       <a class="wallet" @click="goTo('Wallets')"><img class="menuImg" src="https://bcrypt.com.br/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fwallets.f995be22.png&w=256&q=75" alt="Drawing of a wallet">Wallet</a>
-      <a class="home" @click="goTo('Bonecos')"><img class="menuImg" src="https://cdn.worldvectorlogo.com/logos/opensea.svg" alt="Opensea Logo">OpenSea</a>
+      <a class="home" @click="goTo('Bonecos')"><img class="menuImg" src="https://cdn.worldvectorlogo.com/logos/opensea.svg" alt="Opensea Logo">OpenSea</a> -->
       <a class="donate" @click="goTo('Donate')">Donate</a>
     </div>
   </nav>
@@ -51,7 +51,7 @@ nav {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   overflow:hidden;
-gap: 210px;
+gap: 510px;
 border: 2px solid black;
 }
 
@@ -108,14 +108,11 @@ h1 {
 
 @media screen and (max-width: 900px) {
   nav {
-gap: 0px;
+gap: 250px;
   }
 }
 
 @media screen and (max-width: 790px) {
-  h1, .logoImg {
-    display: none;
-  }
   
   .right {
     justify-content: center;
@@ -123,6 +120,12 @@ gap: 0px;
   
   nav {
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 500px) { 
+  nav {
+    gap: 50px;
   }
 }
 
