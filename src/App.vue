@@ -6,7 +6,7 @@
     <h3 class="title projeto">Check <a href="https://bombtutorial.info/" class="linkGit secondLink">BombTutorial HUB</a> to see all my projects</h3>
   </div>
     <HeaderInicial @trocarComponente="trocarComponente" />
-    <SwitchType @trocarComponente="trocarComponente" v-if="componenteAtual !== 'Donate' && componenteAtual !== 'Wallets'" />
+    <SwitchType @trocarComponente="trocarComponente" v-if="componenteAtual !== 'Donate'" />
     <component :is="componenteAtual" />
     <img src="https://bombcrypto.io/static/media/BcoinTokenHero.e064f950a30385943c95.png" alt="Bomb Hero" class="bomber">
   </div>
@@ -36,7 +36,7 @@ export default {
   },
   data() {
     return {
-      componenteAtual: 'Check'
+      componenteAtual: 'Validation'
     }
   },
   mounted() {

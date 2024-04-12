@@ -23,7 +23,7 @@
 export default {
   data() {
     return {
-      activeElement: 'iconCheck' 
+      activeElement: 'iconValidation' 
     };
   },
   methods: {
