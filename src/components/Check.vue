@@ -8,7 +8,7 @@ This page showcases the heroes available for purchase from the site owner,<br>al
        <p><strong>ID: </strong>2912894</p>
        <p><strong>Rarity: </strong>20 POWER Perfect Super Legend</p>
        <p><strong>Price: </strong>$57 (86 MATIC)</p>
-       <p class="abilit"><strong>P: 💥</strong> <u class="greenun">18 + 2</u> | <strong>ST: <img src="https://bcrypt.com.br/_next/image?url=%2Fskills%2Fskill5.webp&w=32&q=75" alt="Speed Skill" style="width: 13px;"> </strong> <u class="yelun">15</u> | <strong>SP: <img src="https://bcrypt.com.br/_next/image?url=%2Fskills%2Fskill1.webp&w=32&q=75" alt="Speed Skill" style="width: 15px;"></strong> <u class="yelun">16</u></p>
+       <p class="abilit"><strong>P: 💥</strong> <u class="greenun">18 + 2</u> | <strong>SP: <img src="https://bcrypt.com.br/_next/image?url=%2Fskills%2Fskill1.webp&w=32&q=75" alt="Speed Skill" style="width: 13px;"> </strong> <u class="yelun">16</u> | <strong>ST: <img src="https://bcrypt.com.br/_next/image?url=%2Fskills%2Fskill5.webp&w=32&q=75" alt="Speed Skill" style="width: 15px;"></strong> <u class="yelun">15</u></p>
        <div class="skills">
         <img src="https://bcrypt.com.br/_next/image?url=%2Fatts%2Ftreasure_hunter_icon.png&w=48&q=75" alt="Treasure Hunter Skill">
         <img src="https://bcrypt.com.br/_next/image?url=%2Fatts%2Fjail_breaker_icon.png&w=48&q=75" alt="Jail Breaker Skill">
@@ -26,7 +26,7 @@ This page showcases the heroes available for purchase from the site owner,<br>al
        <p><strong>ID: </strong>583643</p>
        <p><strong>Rarity: </strong>Perfect Legend</p>
        <p><strong>Price: </strong>$15 (22 MATIC)</p>
-       <p class="abilit"><strong>P: 💥</strong> <u class="greenun">15</u> | <strong>ST: <img src="https://bcrypt.com.br/_next/image?url=%2Fskills%2Fskill5.webp&w=32&q=75" alt="Speed Skill" style="width: 13px;"> </strong> <u class="yelun">14</u> | <strong>SP: <img src="https://bcrypt.com.br/_next/image?url=%2Fskills%2Fskill1.webp&w=32&q=75" alt="Speed Skill" style="width: 15px;"></strong> <u class="greenun">15</u></p>
+       <p class="abilit"><strong>P: 💥</strong> <u class="greenun">15</u> | <strong>ST: <img src="https://bcrypt.com.br/_next/image?url=%2Fskills%2Fskill1.webp&w=32&q=75" alt="Speed Skill" style="width: 13px;"> </strong> <u class="yelun">14</u> | <strong>ST: <img src="https://bcrypt.com.br/_next/image?url=%2Fskills%2Fskill5.webp&w=32&q=75" alt="Speed Skill" style="width: 15px;"></strong> <u class="greenun">15</u></p>
        <div class="skills">
         <img src="https://bcrypt.com.br/_next/image?url=%2Fatts%2Fjail_breaker_icon.png&w=48&q=75" alt="Jail Breaker Skill">
         <img src="https://bcrypt.com.br/_next/image?url=%2Fatts%2Fpierce_block_icon.png&w=48&q=75" alt="Pierce Block Skill">
@@ -42,7 +42,7 @@ This page showcases the heroes available for purchase from the site owner,<br>al
        <p><strong>ID: </strong>835570</p>
        <p><strong>Rarity: </strong>Epic</p>
        <p><strong>Price: </strong>$4 (7 MATIC)</p>
-       <p class="abilit"><strong>P: 💥</strong> <u class="yelun">9</u> | <strong>ST: <img src="https://bcrypt.com.br/_next/image?url=%2Fskills%2Fskill5.webp&w=32&q=75" alt="Speed Skill" style="width: 13px;"> </strong> <u class="yelun">11</u> | <strong>SP: <img src="https://bcrypt.com.br/_next/image?url=%2Fskills%2Fskill1.webp&w=32&q=75" alt="Speed Skill" style="width: 15px;"></strong> <u class="yelun">10</u></p>
+       <p class="abilit"><strong>P: 💥</strong> <u class="yelun">9</u> | <strong>ST: <img src="https://bcrypt.com.br/_next/image?url=%2Fskills%2Fskill1.webp&w=32&q=75" alt="Speed Skill" style="width: 13px;"> </strong> <u class="yelun">11</u> | <strong>ST: <img src="https://bcrypt.com.br/_next/image?url=%2Fskills%2Fskill5.webp&w=32&q=75" alt="Speed Skill" style="width: 15px;"></strong> <u class="yelun">10</u></p>
        <div class="skills">
         <img src="https://bcrypt.com.br/_next/image?url=%2Fatts%2Ftreasure_hunter_icon.png&w=48&q=75" alt="Treasure Hunter Skill">
         <img src="https://bcrypt.com.br/_next/image?url=%2Fatts%2Fsave_battery_icon.png&w=48&q=75" alt="Save Battery Skill">
@@ -57,7 +57,7 @@ This page showcases the heroes available for purchase from the site owner,<br>al
        <p><strong>ID: </strong>848354</p>
        <p><strong>Rarity: </strong>Epic</p>
        <p><strong>Price: </strong>$4 (7 MATIC)</p>
-       <p class="abilit"><strong>P: 💥</strong> <u class="yelun">10 + 2</u> | <strong>ST: <img src="https://bcrypt.com.br/_next/image?url=%2Fskills%2Fskill5.webp&w=32&q=75" alt="Speed Skill" style="width: 13px;"> </strong> <u class="rednun">9</u> | <strong>SP: <img src="https://bcrypt.com.br/_next/image?url=%2Fskills%2Fskill1.webp&w=32&q=75" alt="Speed Skill" style="width: 15px;"></strong> <u class="yelun">11</u></p>
+       <p class="abilit"><strong>P: 💥</strong> <u class="yelun">10 + 2</u> | <strong>ST: <img src="https://bcrypt.com.br/_next/image?url=%2Fskills%2Fskill1.webp&w=32&q=75" alt="Speed Skill" style="width: 13px;"> </strong> <u class="redun">9</u> | <strong>ST: <img src="https://bcrypt.com.br/_next/image?url=%2Fskills%2Fskill5.webp&w=32&q=75" alt="Speed Skill" style="width: 15px;"></strong> <u class="yelun">11</u></p>
        <div class="skills">
         <img src="https://bcrypt.com.br/_next/image?url=%2Fatts%2Ftreasure_hunter_icon.png&w=48&q=75" alt="Treasure Hunter Skill">
         <img src="https://bcrypt.com.br/_next/image?url=%2Fatts%2Fjail_breaker_icon.png&w=48&q=75" alt="Jail Breaker Skill">
@@ -72,7 +72,7 @@ This page showcases the heroes available for purchase from the site owner,<br>al
        <p><strong>ID: </strong>2393342</p>
        <p><strong>Rarity: </strong>Epic</p>
        <p><strong>Price: </strong>$4 (7 MATIC)</p>
-       <p class="abilit"><strong>P: 💥</strong> <u class="yelun">9 + 2</u> | <strong>ST: <img src="https://bcrypt.com.br/_next/image?url=%2Fskills%2Fskill5.webp&w=32&q=75" alt="Speed Skill" style="width: 13px;"> </strong> <u class="yelun">11</u> | <strong>SP: <img src="https://bcrypt.com.br/_next/image?url=%2Fskills%2Fskill1.webp&w=32&q=75" alt="Speed Skill" style="width: 15px;"></strong> <u class="rednun">9</u></p>
+       <p class="abilit"><strong>P: 💥</strong> <u class="yelun">9 + 2</u> | <strong>ST: <img src="https://bcrypt.com.br/_next/image?url=%2Fskills%2Fskill1.webp&w=32&q=75" alt="Speed Skill" style="width: 13px;"> </strong> <u class="yelun">11</u> | <strong>ST: <img src="https://bcrypt.com.br/_next/image?url=%2Fskills%2Fskill5.webp&w=32&q=75" alt="Speed Skill" style="width: 15px;"></strong> <u class="redun">9</u></p>
        <div class="skills">
         <img src="https://bcrypt.com.br/_next/image?url=%2Fatts%2Ftreasure_hunter_icon.png&w=48&q=75" alt="Treasure Hunter Skill">
         <img src="https://bcrypt.com.br/_next/image?url=%2Fatts%2Fjail_breaker_icon.png&w=48&q=75" alt="Jail Breaker Skill">
@@ -84,10 +84,24 @@ This page showcases the heroes available for purchase from the site owner,<br>al
       </div>
       <div class="quadradoSRaro quadradoInfo">
        <img src="https://bcrypt.com.br/_next/image?url=%2Fbhero%2Fvampire_green_icon.png&w=128&q=75" alt="Boneco do BombCrypto" style="width: 70px; padding: 3%;">  
+       <p><strong>ID: </strong>1848208</p>
+       <p><strong>Rarity: </strong>Perfect Super Rare</p>
+       <p><strong>Price: </strong>$1.5 (4.5 MATIC)</p>
+       <p class="abilit"><strong>P: 💥</strong> <u class="yelun">8</u> | <strong>ST: <img src="https://bcrypt.com.br/_next/image?url=%2Fskills%2Fskill1.webp&w=32&q=75" alt="Speed Skill" style="width: 13px;"> </strong> <u class="greenun">9</u> | <strong>ST: <img src="https://bcrypt.com.br/_next/image?url=%2Fskills%2Fskill5.webp&w=32&q=75" alt="Stamina Skill" style="width: 15px;"></strong> <u class="yelun">7</u></p>
+       <div class="skills">
+        <img src="https://bcrypt.com.br/_next/image?url=%2Fatts%2Ftreasure_hunter_icon.png&w=48&q=75" alt="Treasure Hunter Skill">
+        <img src="https://bcrypt.com.br/_next/image?url=%2Fatts%2Fjail_breaker_icon.png&w=48&q=75" alt="Jail Breaker Skill">
+      <img src="https://bcrypt.com.br/_next/image?url=%2Fatts%2Fpierce_block_icon.png&w=48&q=75" alt="Pierce Block Skill">
+    <img src="https://bcrypt.com.br/_next/image?url=%2Fatts%2Fshield_icon.png&w=48&q=75" alt="Shield Skill">
+  </div>
+    <a class="buyButton" href="https://opensea.io/assets/matic/0xd8a06936506379dbbe6e2d8ab1d8c96426320854/1848208" target="_blank">BUY NOW! (OPENSEA)</a>
+      </div>
+      <div class="quadradoSRaro quadradoInfo">
+       <img src="https://bcrypt.com.br/_next/image?url=%2Fbhero%2Fvampire_green_icon.png&w=128&q=75" alt="Boneco do BombCrypto" style="width: 70px; padding: 3%;">  
        <p><strong>ID: </strong>962565</p>
        <p><strong>Rarity: </strong>Super Rare</p>
        <p><strong>Price: </strong>$1 (2.5 MATIC)</p>
-       <p class="abilit"><strong>P: 💥</strong> <u class="yelun">7 +2</u> | <strong>ST: <img src="https://bcrypt.com.br/_next/image?url=%2Fskills%2Fskill5.webp&w=32&q=75" alt="Speed Skill" style="width: 13px;"> </strong> <u class="rednun">6</u> | <strong>SP: <img src="https://bcrypt.com.br/_next/image?url=%2Fskills%2Fskill1.webp&w=32&q=75" alt="Speed Skill" style="width: 15px;"></strong> <u class="greenun">9</u></p>
+       <p class="abilit"><strong>P: 💥</strong> <u class="greenun">7 +2</u> | <strong>ST: <img src="https://bcrypt.com.br/_next/image?url=%2Fskills%2Fskill1.webp&w=32&q=75" alt="Speed Skill" style="width: 13px;"> </strong> <u class="redun">6</u> | <strong>ST: <img src="https://bcrypt.com.br/_next/image?url=%2Fskills%2Fskill5.webp&w=32&q=75" alt="Speed Skill" style="width: 15px;"></strong> <u class="greenun">9</u></p>
        <div class="skills">
         <img src="https://bcrypt.com.br/_next/image?url=%2Fatts%2Ftreasure_hunter_icon.png&w=48&q=75" alt="Treasure Hunter Skill">
         <img src="https://bcrypt.com.br/_next/image?url=%2Fatts%2Fjail_breaker_icon.png&w=48&q=75" alt="Jail Breaker Skill">
@@ -96,6 +110,7 @@ This page showcases the heroes available for purchase from the site owner,<br>al
   </div>
     <a class="buyButton" href="https://opensea.io/assets/matic/0xd8a06936506379dbbe6e2d8ab1d8c96426320854/962565" target="_blank">BUY NOW! (OPENSEA)</a>
       </div>
+     
     </div>
   </div>
   </template>
@@ -112,7 +127,7 @@ This page showcases the heroes available for purchase from the site owner,<br>al
   text-decoration-thickness: 3px;
   }
 
-  .rednun {
+  .redun {
     text-decoration: underline;
   text-decoration-color: red;
   text-decoration-thickness: 3px;
