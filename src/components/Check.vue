@@ -4,7 +4,7 @@
 This page showcases the heroes available for purchase from the site owner,<br>always offered at competitive prices and ensuring a safe transaction.</p>
     <div class="main">
       <div class="quadradoInfo">
-       <img src="https://bcrypt.com.br/_next/image?url=%2FHeroSIcon.png&w=16&q=75" alt="Boneco do BombCrypto" style="width: 70px; padding: 3%;">  
+       <img src="https://bcrypt.com.br/_next/image?url=%2Fbhero%2Fking_icon.png&w=128&q=75" alt="Boneco do BombCrypto" style="width: 70px; padding: 3%;">  
        <p><strong>ID: </strong>2108479</p>
        <p><strong>Rarity: </strong>Super Perfect Super Legend</p>
        <p><strong>Price: </strong>$89 (125 MATIC)</p>
