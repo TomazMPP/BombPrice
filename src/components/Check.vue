@@ -21,22 +21,7 @@ This page showcases the heroes available for purchase from the site owner,<br>al
   </div>
     <a class="buyButton" href="https://opensea.io/assets/matic/0xd8a06936506379dbbe6e2d8ab1d8c96426320854/2912894" target="_blank">BUY NOW! (OPENSEA)</a>
       </div>
-      <div class="lendario quadradoInfo">
-       <img src="https://bcrypt.com.br/_next/image?url=%2Fbhero%2Fpugdog_icon.png&w=128&q=75" alt="Boneco do BombCrypto" style="width: 75px; padding: 5%;">  
-       <p><strong>ID: </strong>583643</p>
-       <p><strong>Rarity: </strong>Perfect Legend</p>
-       <p><strong>Price: </strong>$15 (22 MATIC)</p>
-       <p class="abilit"><strong>P: 💥</strong> <u class="greenun">15</u> | <strong>ST: <img src="https://bcrypt.com.br/_next/image?url=%2Fskills%2Fskill1.webp&w=32&q=75" alt="Speed Skill" style="width: 13px;"> </strong> <u class="yelun">14</u> | <strong>ST: <img src="https://bcrypt.com.br/_next/image?url=%2Fskills%2Fskill5.webp&w=32&q=75" alt="Speed Skill" style="width: 15px;"></strong> <u class="greenun">15</u></p>
-       <div class="skills">
-        <img src="https://bcrypt.com.br/_next/image?url=%2Fatts%2Fjail_breaker_icon.png&w=48&q=75" alt="Jail Breaker Skill">
-        <img src="https://bcrypt.com.br/_next/image?url=%2Fatts%2Fpierce_block_icon.png&w=48&q=75" alt="Pierce Block Skill">
-        <img src="https://bcrypt.com.br/_next/image?url=%2Fatts%2Ffast_charge_icon.png&w=48&q=75" alt="Battery Skill">
-        <img src="https://bcrypt.com.br/_next/image?url=%2Fatts%2Fbomb_pass_icon.png&w=48&q=75" alt="Bomb Pass Skill">
-        <img src="https://bcrypt.com.br/_next/image?url=%2Fatts%2Fblock_pass_icon.png&w=48&q=75" alt="Block Pass Skill">
-    <img src="https://bcrypt.com.br/_next/image?url=%2Fatts%2Fshield_icon.png&w=48&q=75" alt="Shield Skill">
-  </div>
-    <a class="buyButton" href="https://opensea.io/assets/matic/0xd8a06936506379dbbe6e2d8ab1d8c96426320854/583643" target="_blank">BUY NOW! (OPENSEA)</a>
-      </div>
+      
       <div class="quadradoEpico quadradoInfo">
        <img src="https://bcrypt.com.br/_next/image?url=%2Fbhero%2Ftiger_icon.png&w=128&q=75" alt="Boneco do BombCrypto" style="width: 75px; padding: 5%;">  
        <p><strong>ID: </strong>835570</p>
@@ -82,20 +67,7 @@ This page showcases the heroes available for purchase from the site owner,<br>al
   </div>
     <a class="buyButton" href="https://opensea.io/assets/matic/0xd8a06936506379dbbe6e2d8ab1d8c96426320854/2393342" target="_blank">BUY NOW! (OPENSEA)</a>
       </div>
-      <div class="quadradoSRaro quadradoInfo">
-       <img src="https://bcrypt.com.br/_next/image?url=%2Fbhero%2Fvampire_green_icon.png&w=128&q=75" alt="Boneco do BombCrypto" style="width: 70px; padding: 3%;">  
-       <p><strong>ID: </strong>962565</p>
-       <p><strong>Rarity: </strong>Super Rare</p>
-       <p><strong>Price: </strong>$1 (2.5 MATIC)</p>
-       <p class="abilit"><strong>P: 💥</strong> <u class="greenun">7 +2</u> | <strong>ST: <img src="https://bcrypt.com.br/_next/image?url=%2Fskills%2Fskill1.webp&w=32&q=75" alt="Speed Skill" style="width: 13px;"> </strong> <u class="redun">6</u> | <strong>ST: <img src="https://bcrypt.com.br/_next/image?url=%2Fskills%2Fskill5.webp&w=32&q=75" alt="Speed Skill" style="width: 15px;"></strong> <u class="greenun">9</u></p>
-       <div class="skills">
-        <img src="https://bcrypt.com.br/_next/image?url=%2Fatts%2Ftreasure_hunter_icon.png&w=48&q=75" alt="Treasure Hunter Skill">
-        <img src="https://bcrypt.com.br/_next/image?url=%2Fatts%2Fjail_breaker_icon.png&w=48&q=75" alt="Jail Breaker Skill">
-      <img src="https://bcrypt.com.br/_next/image?url=%2Fatts%2Fpierce_block_icon.png&w=48&q=75" alt="Pierce Block Skill">
-    <img src="https://bcrypt.com.br/_next/image?url=%2Fatts%2Fshield_icon.png&w=48&q=75" alt="Shield Skill">
-  </div>
-    <a class="buyButton" href="https://opensea.io/assets/matic/0xd8a06936506379dbbe6e2d8ab1d8c96426320854/962565" target="_blank">BUY NOW! (OPENSEA)</a>
-      </div>
+  
      
     </div>
   </div>
