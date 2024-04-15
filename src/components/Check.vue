@@ -39,7 +39,7 @@ This page showcases the heroes available for purchase from the site owner,<br>al
   </div>
     <a class="buyButton" href="https://opensea.io/assets/matic/0xd8a06936506379dbbe6e2d8ab1d8c96426320854/2912894" target="_blank">BUY NOW! (OPENSEA)</a>
       </div>
-       <div class="quadradoInfo">
+       <div class="lendario quadradoInfo">
        <img src="https://bcrypt.com.br/_next/image?url=%2Fbhero%2Fwitch_purple_icon.png&w=128&q=75" alt="Boneco do BombCrypto" style="width: 70px; padding: 3%;">  
        <p><strong>ID: </strong>1527022</p>
        <p><strong>Rarity: </strong>Legend</p>
