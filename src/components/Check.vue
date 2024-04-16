@@ -3,6 +3,14 @@
  <p class="warning">
 This page showcases the heroes available for purchase from the site owner,<br>always offered at competitive prices and ensuring a safe transaction.</p>
     <div class="main">
+      <div class="quadradoInfo casa">
+       <img src="https://bcrypt.com.br/_next/image?url=%2Fbhouse%2FMiniHouse.png&w=128&q=75" alt="Casa do BombCrypto" style="width: 70px; padding: 3%;">  
+       <p><strong>ID: </strong>3010</p>
+       <p><strong>Rarity: </strong>MINI</p>
+       <p><strong>Price: </strong>$68 (99 MATIC)</p>
+<br><br>
+    <a class="buyButton" href="https://opensea.io/assets/matic/0x2d5f4ba3e4a2d991bd72edbf78f607c174636618/3010" target="_blank">BUY NOW! (OPENSEA)</a>
+  </div>
       <div class="quadradoInfo">
        <img src="https://bcrypt.com.br/_next/image?url=%2Fbhero%2Fking_icon.png&w=128&q=75" alt="Boneco do BombCrypto" style="width: 65px; padding: 3%;">  
        <p><strong>ID: </strong>2108479</p>
