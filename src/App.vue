@@ -2,7 +2,7 @@
   <div id="app">
     <inject />
     <div class="textos">
-    <h2 class="title">Developed by <a href="https://github.com/TomazMPP/BombPrice" class="linkGit">Tomaz</a></h2>
+    <h2 class="title">Developed by <a href="" class="linkGit">Tomaz</a></h2>
     <h3 class="title projeto">Check <a href="https://bombtutorial.info/" class="linkGit secondLink">BombTutorial HUB</a> to see all my projects</h3>
   </div>
     <HeaderInicial @trocarComponente="trocarComponente" />
