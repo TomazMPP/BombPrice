@@ -8,6 +8,7 @@ This page showcases the heroes available for purchase from the site owner,<br>al
   
 </p>
     </div>
+    </div>
   </template>
   <style scoped> 
 .abilit {
