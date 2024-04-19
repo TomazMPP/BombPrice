@@ -1,9 +1,16 @@
 {
-    "cleanUrls": true,
-    "rewrites": [
-      {
-        "source": "/score",
-        "destination": "public/BombScore/index.html"
-      }
+    "version": 2,
+    "builds": [
+     {
+      "src": "app.js",
+      "use": "@vercel/node",
+      "config": { "includeFiles": ["dist/**"] }
+     }
+    ],
+    "routes": [
+     {
+      "src": "/(.*)",
+      "dest": "app.js"
+     }
     ]
-  }
+   }

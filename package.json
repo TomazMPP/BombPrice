@@ -10,6 +10,10 @@
   },
   "dependencies": {
     "@vercel/analytics": "^1.2.2",
+    "cheerio": "^1.0.0-rc.12",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "node-fetch": "^3.3.2",
     "vue": "^3.4.21"
   },
   "devDependencies": {
